@@ -1,13 +1,22 @@
 package br.com.unip.startool.acao;
 
+
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ListarStartups {
+import br.com.unip.startool.modelo.Banco;
+import br.com.unip.startool.modelo.Startups;
 
+public class ListarStartups {
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
-		// TODO Auto-generated method stub
-		return null;
+		Banco bancodados = new Banco();
+		List<Startups> listas =  bancodados.getListaStartup();
+		
+		request.setAttribute("startupsListadas", listas);
+		return "forward:pagina-inicial.jsp";
+				
 	}
 
 }

@@ -20,10 +20,9 @@ public class ControllerEntrada extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String entradaAcao = request.getParameter("acao");
 		
-		System.out.println(entradaAcao);
 		String name = null;
 		
-		if(entradaAcao.equals("listarStartups")) {
+		if(entradaAcao.equals("ListarStartups")) {
 			ListarStartups acao = new ListarStartups();
 			name = acao.execute(request,response);
 		}
