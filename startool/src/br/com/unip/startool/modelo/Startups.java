@@ -42,5 +42,9 @@ public class Startups {
 	public void setDescricao(Descricao descricao) {
 		this.descricao = descricao;
 	}
-	
+	@Override
+	public String toString() {
+		return "Nome: " + nome + " Projeto: " + projeto + " Unidade: " + unidade + " Ferramenta: " + ferramentas 
+				+ " Descricao: " + descricao;
+	}
 }

@@ -18,9 +18,9 @@ public class Descricao {
 	public void setAssunto(String assunto) {
 		this.assunto = assunto;
 	}
-
 	
-
-	
-
+	@Override
+	public String toString() {
+		return "Titulo: " + titulo + " Assunto: " + assunto;
+	}
 }
