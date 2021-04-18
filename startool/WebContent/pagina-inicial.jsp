@@ -15,19 +15,31 @@
 </head>
 <body>
     <!--====== NAV PART START ======-->
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-        <img src="assets/img/logo.png" width="60" height="60" alt="">
-        <ul class="nav navbar-nav ml-auto">
-            <li class="navbar-right"><a href="#">Sobre Nos</a></li>
-        </ul>  
-        <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
-        <button type="button" class="btn btn-secondary btn-sm">Login</button>
-        </a>
-    </nav>
-
+    <div class="header">
+        <div class="menu-bar">
+           <nav class="navbar navbar-expand-lg navbar-light">
+             <div class="container-fluid">
+               <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="60" height="60" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"><i class="fa fa-bars"></i> </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nós</a></li>
+                      <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+			          <button type="button" class="btn btn-secondary btn-sm">Login</button>
+			       </ul>
+                  </div>
+             </div>
+           </nav>
+       </div>
+   </div>
 
     <!--====== FOOTER PART START ======-->
+     <section>
+        <div class="test">    
+        </div>
+    </section>
+    
     <footer id="footer" class="footer_area">
       <div class="container">
           <div class="row footer_content">
@@ -67,7 +79,8 @@
     
     
  
-    <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
+   <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="assets/js/script.js"></script>
 </body> 
 </html>
