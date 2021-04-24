@@ -40,7 +40,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div>
-						<img src="img/logo_name.png" alt="" class="img-fluid">
+						<img src="assets/img/logo_name.png" alt="" class="img-fluid">
 						<p style="color: #fff; font-size: 45px;">Inicie sua StartUP com a Startool.</p>
 					</div>
 					<div class="row">
