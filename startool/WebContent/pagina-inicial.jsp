@@ -35,7 +35,7 @@
    </div>
 
     <!--====== FOOTER PART START ======-->
-	<section class="section-main" style="background-color: #343a40; padding-top: 80px;">
+	<section class="section-main" style="background-color: rgba(0, 0, 0, 0.78); padding-top: 80px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
