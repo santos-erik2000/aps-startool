@@ -26,7 +26,9 @@ public class ControllerEntrada extends HttpServlet {
 		if(entradaAcao.equals("ListarStartups")) {
 			ListarStartups acao = new ListarStartups();
 			name = acao.execute(request,response);
-		}
+		} // COLOCAR O IF AQUI DA PAGINA LOGIN
+		
+		
 		
 		String [] tipoEndereco = name.split(":");
 		if(tipoEndereco[0].equals("forward")) {

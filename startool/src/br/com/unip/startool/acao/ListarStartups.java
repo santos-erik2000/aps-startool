@@ -14,10 +14,11 @@ public class ListarStartups {
 		
 		Banco bancodados = new Banco();
 		List<Startups> listas =  bancodados.getListaStartup();
-		request.setAttribute("startupsListadas", listas);
+		request.setAttribute("startups", listas);
 			
 		System.out.println(listas.get(1));
 		System.out.println(listas.get(0));
+		
 	
 		return "forward:pagina-inicial.jsp";
 				
