@@ -35,7 +35,7 @@
        </div>
    </div>
 
-    <!--====== FOOTER PART START ======-->
+    
 	<section class="section-main" style="background-color: rgba(0, 0, 0, 0.78); padding-top: 80px;">
 		<div class="container">
 			<div class="row">
@@ -90,9 +90,28 @@
 			</div>
 		</div>
 	</section>
+	<!--====== CONTEUDO PART START ======-->
+    <section id="conteudo" class="conteudo_area pt-70 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="conteudo-content">
+                        <div class="conteudo-about">
+                            <h1 class="mb-35 counteudo_tittle">Começa a Sua Startup Com a Gente</h1>
+                            <p class="mb-35 conteudo-frase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore hdht dolore magna aliquyam erat, sed diam voluptua.</p>         
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-first order-lg-last d-flex justify-content-end">
+                    <div class="conteudo-img">
+                        <img src="assets/img/conteudo_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	
-	
-    
+    <!--====== FOOTER PART START ======-->
     <footer id="footer" class="footer_area">
       <div class="container">
           <div class="row footer_content">

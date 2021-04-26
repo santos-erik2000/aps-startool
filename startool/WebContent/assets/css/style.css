@@ -926,7 +926,50 @@ table {
     width: 100%;
     background-color: rgb(255, 245, 245);
   }
+/*===========================
+        CONTEUDO css 
+  ===========================*/
 
+.conteudo_area {
+  background-color: var(--mainColor);
+  color: #fff;
+  font-family: 'Archivo', sans-serif;
+}
+
+.conteudo-content {
+  margin-right: 50px;
+}
+
+.counteudo_tittle {
+  font-size: 45px;
+  font-weight: 600;
+  color: inherit;
+}
+.conteudo-frase {
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+/* .conteudo-img {
+  width: 420px;
+  height: 655px;
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .conteudo-img {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .conteudo-img {
+    margin-bottom: 50px;
+  }
+}
+
+.conteudo-img img {
+  width: 100%;
+}
 /*===========================
         10.FOOTER css 
   ===========================*/
