@@ -30,8 +30,18 @@ public class Banco {
 		s2.getDescricao().setTitulo("Acabando com minha Vida");
 		s2.getDescricao().setAssunto("Com certeza Disso !!!");
 		
+		Startups s3 = new Startups();
+		Descricao d3 = new Descricao();
+		s3.setNome("FIAT");
+		s3.setProjeto("Vender Carros");
+		s3.setFerramentas(ferramentas);
+		s3.setDescricao(d2);
+		s3.getDescricao().setTitulo("Vendendo Carros");
+		s3.getDescricao().setAssunto("A boa de Negocios");
+		
 		listaStartup.add(s1);
 		listaStartup.add(s2);
+		listaStartup.add(s3);
 	}
 	
 	public List<Startups> getListaStartup() {

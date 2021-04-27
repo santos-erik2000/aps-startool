@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.unip.startool.acao.ListarStartups;
 import br.com.unip.startool.acao.PaginaLogin;
-import br.com.unip.startool.acao.ValidaLogin;
 import br.com.unip.startool.acao.ValidarLogin;
 
 /**
