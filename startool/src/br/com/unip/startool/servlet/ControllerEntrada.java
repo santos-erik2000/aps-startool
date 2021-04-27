@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.unip.startool.acao.ListarStartups;
+import br.com.unip.startool.acao.PaginaLogin;
+import br.com.unip.startool.acao.ValidaLogin;
+import br.com.unip.startool.acao.ValidarLogin;
 
 /**
  * Servlet implementation class ControllerEntrada
@@ -26,9 +29,15 @@ public class ControllerEntrada extends HttpServlet {
 		if(entradaAcao.equals("ListarStartups")) {
 			ListarStartups acao = new ListarStartups();
 			name = acao.execute(request,response);
-		} // COLOCAR O IF AQUI DA PAGINA LOGIN
-		
-		
+		}
+		else if(entradaAcao.equals("PaginaLogin")) {
+			PaginaLogin acao = new PaginaLogin();
+			name = acao.execute(request,response);
+		}
+		else if(entradaAcao.equals("ValidarLogin")) {
+			ValidarLogin acao = new ValidarLogin();
+			name = acao.execute(request,response);
+		}
 		
 		String [] tipoEndereco = name.split(":");
 		if(tipoEndereco[0].equals("forward")) {
