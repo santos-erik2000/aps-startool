@@ -103,12 +103,15 @@ public class Cliente {
 		this.estudante = estudante;
 	}
 	
-	public boolean validaUsuario(String usuario, String senha ) {
+	public boolean isCorrect(String usuario, String senha ) {
 		
-		if(this.usuario == usuario && this.senha == senha ) {
-			return true;
+		if(!this.usuario.equals(usuario)) {
+			return false;
 		}
-		return false;
+		if(!this.senha.equals(senha) ) {
+			return false;
+		}
+		return true;
 	}
 	
 
