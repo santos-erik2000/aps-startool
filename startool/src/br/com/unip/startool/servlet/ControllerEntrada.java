@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import br.com.unip.startool.acao.ListarStartups;
+import br.com.unip.startool.acao.PaginaCadastrar;
 import br.com.unip.startool.acao.PaginaLogin;
 import br.com.unip.startool.acao.ValidarLogin;
 
@@ -35,6 +36,10 @@ public class ControllerEntrada extends HttpServlet {
 		}
 		else if(entradaAcao.equals("ValidarLogin")) {
 			ValidarLogin acao = new ValidarLogin();
+			name = acao.execute(request,response);
+		}
+		else if(entradaAcao.equals("PaginaCadastrar")) {
+			PaginaCadastrar acao = new PaginaCadastrar();
 			name = acao.execute(request,response);
 		}
 		
