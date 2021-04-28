@@ -44,6 +44,7 @@ public class ControllerEntrada extends HttpServlet {
 			name = acao.execute(request,response);
 		}
 		else if(entradaAcao.equals("NovoUsuario")) {
+			System.out.println("calcinha pretra");
 			NovoUsuario acao = new NovoUsuario();
 			name = acao.execute(request,response);
 		}

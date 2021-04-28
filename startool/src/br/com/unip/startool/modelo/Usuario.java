@@ -114,6 +114,18 @@ public class Usuario {
 		return true;
 	}
 	
+	public void isEstudante(String verifique) {
+		 Estudante e;
+		if (verifique.equals("SIM")) {
+			
+			 e = Estudante.SIM;
+			 
+		}else {
+			e = Estudante.NAO;
+		}
+		this.setEstudante(e);
+		
+	}
 
 	
 }
