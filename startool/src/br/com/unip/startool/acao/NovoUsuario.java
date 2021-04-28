@@ -22,7 +22,7 @@ public class NovoUsuario {
 		String isEstudante = request.getParameter("estudante");
 		
 		Usuario u = new Usuario();
-		//u.isEstudante(isEstudante);
+		u.isEstudante(isEstudante);
 		u.setNome(nome);
 		u.setRa(ra);
 		u.setCidade(cidade);
@@ -34,6 +34,7 @@ public class NovoUsuario {
 		u.setSenha(senha);
 		u.setLogin(login);
 		
+		System.out.println(u.getEstudante());
 		Banco b = new Banco();
 		
 		b.adicionarUsu(u);
