@@ -61,6 +61,10 @@ public class Banco {
 		listaStartup.add(startup);
 	}
 	
+	public void adicionarUsu(Usuario usuario) {
+		listaUsuario.add(usuario);
+	}
+	
 	public Usuario validaLogin(String login, String senha) {
 		for(Usuario usuario : listaUsuario) {
 			if(usuario.isCorrect(login, senha)) {
