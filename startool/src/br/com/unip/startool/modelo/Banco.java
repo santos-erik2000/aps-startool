@@ -1,10 +1,12 @@
 package br.com.unip.startool.modelo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Banco {
 	private static List<Startups> listaStartup = new ArrayList<Startups>();
+	private static List<Usuario> listaUsuario = new ArrayList<Usuario>();
 
 	static {
 		List<String> ferramentas = new ArrayList<>();
@@ -42,6 +44,13 @@ public class Banco {
 		listaStartup.add(s1);
 		listaStartup.add(s2);
 		listaStartup.add(s3);
+		
+		
+		Usuario u1 = new Usuario();
+		u1.setLogin("lindo");
+		u1.setSenha("123");
+		
+		listaUsuario.add(u1);
 	}
 	
 	public List<Startups> getListaStartup() {
@@ -50,5 +59,15 @@ public class Banco {
 
 	public void adicionar(Startups startup) {
 		listaStartup.add(startup);
+	}
+	
+	public Usuario validaLogin(String login, String senha) {
+		for(Usuario usuario : listaUsuario) {
+			if(usuario.isCorrect(login, senha)) {
+				return usuario;
+			}
+		}
+		
+		return null;
 	}
 }

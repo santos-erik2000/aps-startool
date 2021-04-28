@@ -1,6 +1,6 @@
 package br.com.unip.startool.modelo;
 
-public class Cliente {
+public class Usuario {
 	
 	private String nome;
 	private String ra;
@@ -11,7 +11,7 @@ public class Cliente {
 	private String celular;
 	private String email;
 	private String senha;
-	private String usuario;
+	private String login;
 	private Estudante estudante;
 	
 	
@@ -87,12 +87,12 @@ public class Cliente {
 		this.senha = senha;
 	}
 
-	public String getUsuario() {
-		return usuario;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setLogin(String usuario) {
+		this.login = usuario;
 	}
 
 	public Estudante getEstudante() {
@@ -105,7 +105,7 @@ public class Cliente {
 	
 	public boolean isCorrect(String usuario, String senha ) {
 		
-		if(!this.usuario.equals(usuario)) {
+		if(!this.login.equals(usuario)) {
 			return false;
 		}
 		if(!this.senha.equals(senha) ) {
