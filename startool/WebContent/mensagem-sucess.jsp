@@ -11,6 +11,7 @@
 </head>
 <body>
  	<h1>${usuario.nome}</h1>
+ 	<input type="text" name="email" value="${usuario.nome}"/>
 	
 </body>
 </html>
