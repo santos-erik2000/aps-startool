@@ -7,7 +7,7 @@ import java.util.List;
 public class Banco {
 	private static List<Startups> listaStartup = new ArrayList<Startups>();
 	private static List<Usuario> listaUsuario = new ArrayList<Usuario>();
-	private Integer chaveStartup = 1;
+	private static Integer chaveStartup = 1;
 	private static Integer chaveusuario = 1;
 
 	static {
@@ -17,6 +17,7 @@ public class Banco {
 		
 		Startups s1 = new Startups();
 		Descricao d1 = new Descricao();
+		s1.setId(chaveStartup++);
 		s1.setNome("CI&T");
 		s1.setProjeto("Itau");
 		s1.setFerramentas(ferramentas);
@@ -27,6 +28,7 @@ public class Banco {
 		
 		Startups s2 = new Startups();
 		Descricao d2 = new Descricao();
+		s2.setId(chaveStartup++);
 		s2.setNome("AF System");
 		s2.setProjeto("WEB");
 		s2.setFerramentas(ferramentas);
@@ -36,6 +38,7 @@ public class Banco {
 		
 		Startups s3 = new Startups();
 		Descricao d3 = new Descricao();
+		s3.setId(chaveStartup++);
 		s3.setNome("FIAT");
 		s3.setProjeto("Vender Carros");
 		s3.setFerramentas(ferramentas);
@@ -49,6 +52,7 @@ public class Banco {
 		
 		
 		Usuario u1 = new Usuario();
+		u1.setId(chaveusuario++);
 		u1.setLogin("lindo");
 		u1.setSenha("123");
 		
@@ -60,10 +64,12 @@ public class Banco {
 	}
 
 	public void adicionar(Startups startup) {
+		startup.setId(chaveStartup++);
 		listaStartup.add(startup);
 	}
 	
 	public void adicionarUsu(Usuario usuario) {
+		usuario.setId(chaveusuario++);
 		listaUsuario.add(usuario);
 	}
 	
