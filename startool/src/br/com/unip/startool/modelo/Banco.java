@@ -7,6 +7,8 @@ import java.util.List;
 public class Banco {
 	private static List<Startups> listaStartup = new ArrayList<Startups>();
 	private static List<Usuario> listaUsuario = new ArrayList<Usuario>();
+	private Integer chaveStartup = 1;
+	private static Integer chaveusuario = 1;
 
 	static {
 		List<String> ferramentas = new ArrayList<>();

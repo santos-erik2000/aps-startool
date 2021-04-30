@@ -1,7 +1,11 @@
 package br.com.unip.startool.modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Usuario {
 	
+	private Integer id;
 	private String nome;
 	private String ra;
 	private String cidade;
@@ -13,8 +17,14 @@ public class Usuario {
 	private String senha;
 	private String login;
 	private Estudante estudante;
+	private List<Startups> listaStartups = new ArrayList<Startups>();
 	
-	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Integer getId() {
+		return id;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -103,6 +113,13 @@ public class Usuario {
 		this.estudante = estudante;
 	}
 	
+	public void setListaStartups(List<Startups> listaStartups) {
+		this.listaStartups = listaStartups;
+	}
+	
+	public List<Startups> getListaStartups() {
+		return listaStartups;
+	}
 	public boolean isCorrect(String usuario, String senha ) {
 		
 		if(!this.login.equals(usuario)) {
@@ -126,6 +143,9 @@ public class Usuario {
 		this.setEstudante(e);
 		
 	}
-
+	
+	public void adicionarStart(Startups star) {
+		listaStartups.add(star);
+	}
 	
 }

@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Startups {
 	
+	private Integer id;
 	private String nome;
 	private String projeto; 
 	private String unidade;
@@ -12,7 +13,13 @@ public class Startups {
 	private List <String> ferramentas = new ArrayList<>();
 	private Descricao descricao;
 	
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	
+	public Integer getId() {
+		return id;
+	}
 	public String getNome() {
 		return nome;
 	}
