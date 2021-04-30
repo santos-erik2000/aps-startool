@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, 
@@ -15,57 +15,42 @@
     <title>My Project</title>
 </head>
 <body>
-    <!--====== NAV PART START ======-->
-    <div class="header">
-        <div class="menu-bar">
-           <nav class="navbar navbar-expand-lg navbar-light">
-             <div class="container-fluid">
-               <a class="navbar-brand" href="#"><img src="assets/img/logo.png" width="60" height="60" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"><i class="fa fa-bars"></i> </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nï¿½s</a></li>
-                      <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
-			          <button type="button" class="btn btn-secondary btn-sm">Login</button>
-			       </ul>
-                  </div>
-             </div>
-           </nav>
-       </div>
+   <!--====== NAV PART START ======-->
+<div class="header">
+    <div class="menu-bar">
+       <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo-nav.png"alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"><i class="fa fa-bars"></i> </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Nós</a></li>
+                            <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+                            <button type="button" class="btn btn-secondary btn-sm">Login</button>
+                        </ul>
+                    </div>            
+            </div>
+       </nav>
    </div>
-
-    
-	<section class="section-main" style="background-color: rgba(0, 0, 0, 0.78); padding-top: 80px;">
+</div>
+    <!--====== MAIN SECTION START ======-->
+	<section class="section-main">
 		<div class="container">
-			<div class="row">
+			<div class="row margin-main">
 				<div class="col-md-6">
-					<div>
-						<img src="assets/img/logo_name.png" alt="" class="img-fluid">
-						<p style="color: #fff; font-size: 45px;">Inicie sua StartUP com a Startool.</p>
-					</div>
-					<div class="row">
-						<div class="button-to-cad col-md-5"><img src="assets/img/icon/cadastro.png" width="35" style="color: #fff;" /> CADASTRAR</div>
-						<div class="button-to-log col-md-5"><img src="assets/img/icon/login.png" width="35" style="color: #fff;" />&nbsp;LOGIN</div>
-					</div>
-
-					<style>
-						 @media(min-width: 1200px){
-							.button-to-log {
-								margin-left: 20px;
-							}
-						 }
-						 @media(max-width: 600px){
-							.button-to-log {
-								margin-bottom: 20px;
-							}
-							.button-to-cad {
-								margin-bottom: 20px;
-							}
-						 }
-					</style>
-							
-						
+					<div class="left">
+                        <div class="logo-main-class">
+                            <img src="assets/img/logo_name_main.png" alt="">
+                        </div>						
+                        <div class="frase-main-section">
+                            <p>Inicie sua Startup com a Startool.</p>
+                        </div>												
+                        <div class="btn-main-section">
+                            <button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
+						    <button class="button-to-log"><img src="assets/img/icon/login.png"/>Login</button>
+                        </div>						
+					</div>	
 				</div>
 
 				
@@ -90,14 +75,15 @@
 			</div>
 		</div>
 	</section>
-	<!--====== CONTEUDO PART START ======-->
+
+    <!--====== CONTEUDO PART START ======-->
     <section id="conteudo" class="conteudo_area pt-70 pb-70">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="conteudo-content">
                         <div class="conteudo-about">
-                            <h1 class="mb-35 counteudo_tittle">Começa a Sua Startup Com a Gente</h1>
+                            <h1 class="mb-35 counteudo_tittle">Começar a Sua Startup Com a Gente</h1>
                             <p class="mb-35 conteudo-frase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore hdht dolore magna aliquyam erat, sed diam voluptua.</p>         
                         </div>
                     </div>
@@ -110,48 +96,79 @@
             </div>
         </div>
     </section>
-	
+    <!--====== CONTEUDO 2 PART START ======-->
+    <section id="conteudo" class="conteudo_area pt-70 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-7 d-flex justify-content-start">
+                    <div class="conteudo-img">
+                        <img src="assets/img/conteudo2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-5 order-last order-lg-last d-flex justify-content-lg-end">
+                    <div class="conteudo-content-right">
+                        <div class="conteudo-about">
+                            <h1 class="mb-35 counteudo_tittle">Começar a Sua Startup Com a Gente</h1>
+                            <p class="mb-35 conteudo-frase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore hdht dolore magna aliquyam erat, sed diam voluptua.</p>         
+                        </div>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+
     <!--====== FOOTER PART START ======-->
     <footer id="footer" class="footer_area">
       <div class="container">
-          <div class="row footer_content">
-            <div class="col-lg-3 col-md-6">
-                <div class="footer_logo d-flex justify-content-center">
-                    <a href="index.html"><img src="assets/img/footer-logo.png" alt=""></a>
+            <div class="row footer_content">
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div class="footer_img">
+                            <a href="index.html"><img src="assets/img/footer-logo.png" alt=""></a>
+                        </div>   
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-5 col-md-6 pt-30 footer_test">
-                <ul class="link">
-                    <li><a href="#">Fale com a gente</a></li>
-                    <li><a href="#">3541-0090</a></li>
-                    <li><a href="#">suporte@gmail.com</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 align-items-center pt-30">
-                <div class="footer_logo d-flex justify-content-center">
-                    <a href="index.html"><img src="assets/img/footer-name.png" alt=""></a>
+
+                <div class="col-lg-5 col-md-6 pt-30 footer_link">
+                    <ul class="link">
+                        <li><a href="#">Fale com a gente</a></li>
+                        <li><a href="#">3541-0090</a></li>
+                        <li><a href="#">suporte@gmail.com</a></li>
+                    </ul>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <div class="footer_social text-center">
-                        <ul class="social">
-                            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                            <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                        </ul>
-                </div> <!-- footer copyright -->
+
+                <div class="col-lg-4 col-md-6 col-sm-12 pt-30">
+                    <div class="footer_logo d-flex justify-content-center justify-content-lg-end">
+                            <a href="index.html"><img src="assets/img/footer-name.png" alt=""></a>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-lg-end">
+                        <div class="footer_social text-center">
+                            <ul class="social">
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
+                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+
             </div>
+
+          <div class="footer_copyright text-center pb-20"> <!-- footer copyright -->
+              <p>Copyright © 2021- Startool </p>
           </div>
-          <div class="footer_copyright text-center">
-              <p>Copyright ï¿½ 2021- Startool </p>
-          </div>
+
       </div> <!-- container -->
   </footer>
     
     
     
  
-   <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
+    <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="assets/js/script.js"></script>
 </body> 
