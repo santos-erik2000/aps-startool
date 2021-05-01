@@ -9,10 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.unip.startool.acao.Dashboard;
+import br.com.unip.startool.acao.InformaStartup;
 import br.com.unip.startool.acao.ListarStartups;
+import br.com.unip.startool.acao.NovaStartup;
 import br.com.unip.startool.acao.NovoUsuario;
 import br.com.unip.startool.acao.PaginaCadastrar;
 import br.com.unip.startool.acao.PaginaLogin;
+import br.com.unip.startool.acao.Perfil;
 import br.com.unip.startool.acao.ValidarLogin;
 
 /**
@@ -44,8 +48,23 @@ public class ControllerEntrada extends HttpServlet {
 			name = acao.execute(request,response);
 		}
 		else if(entradaAcao.equals("NovoUsuario")) {
-			System.out.println("calcinha pretra");
 			NovoUsuario acao = new NovoUsuario();
+			name = acao.execute(request,response);
+		}
+		else if(entradaAcao.equals("Dashboard")) {
+			Dashboard acao = new Dashboard();
+			name = acao.execute(request,response);
+		}
+		else if(entradaAcao.equals("NovaStartup")) {
+			NovaStartup acao = new NovaStartup();
+			name = acao.execute(request,response);
+		}
+		else if(entradaAcao.equals("Perfil")) {
+			Perfil acao = new Perfil();
+			name = acao.execute(request,response);
+		}
+		else if(entradaAcao.equals("InformaStartup")) {
+			InformaStartup acao = new InformaStartup();
 			name = acao.execute(request,response);
 		}
 		
