@@ -8,6 +8,18 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1>Usuario ${usuario.nome} Online</h1>
+	<c:forEach items="${startups}" var="startup">
+		 <p>Nome: ${startup.nome}</p>
+		 <p>Projeto: ${startup.projeto}</p>
+		 <p>Categoria: ${startup.categoria}</p>
+		 <p>Unidade: ${startup.unidade}</p>
+		<p>Ferramentas: ${startup.ferramentas}</p>
+		 <p>Descricao: ${startup.descricao.titulo}</p>
+		 <p>Assunto: ${startup.descricao.assunto}</p>
+		<br>
+		<br>
+		<br>
+	</c:forEach>
 </body>
 </html>

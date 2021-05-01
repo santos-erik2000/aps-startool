@@ -18,6 +18,7 @@ public class Usuario {
 	private String login;
 	private Estudante estudante;
 	private List<Startups> listaStartups = new ArrayList<Startups>();
+	private List<String> listaNomeStartup = new ArrayList<String>();
 	
 	public void setId(Integer id) {
 		this.id = id;
@@ -104,6 +105,13 @@ public class Usuario {
 	public void setLogin(String usuario) {
 		this.login = usuario;
 	}
+	public void setListaNomeStartup(List<String> listaNomeStartup) {
+		this.listaNomeStartup = listaNomeStartup;
+	}
+	
+	public List<String> getListaNomeStartup() {
+		return listaNomeStartup;
+	}
 
 	public Estudante getEstudante() {
 		return estudante;
@@ -143,9 +151,11 @@ public class Usuario {
 		this.setEstudante(e);
 		
 	}
+
 	
 	public void adicionarStart(Startups star) {
 		listaStartups.add(star);
+		listaNomeStartup.add(star.getNome());
 	}
 	
 }

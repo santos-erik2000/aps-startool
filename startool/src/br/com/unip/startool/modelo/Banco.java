@@ -19,6 +19,8 @@ public class Banco {
 		Descricao d1 = new Descricao();
 		s1.setId(chaveStartup++);
 		s1.setNome("CI&T");
+		s1.setCategoria("TI");
+		s1.setUnidade("Limeira");
 		s1.setProjeto("Itau");
 		s1.setFerramentas(ferramentas);
 		s1.setDescricao(d1);
@@ -30,6 +32,8 @@ public class Banco {
 		Descricao d2 = new Descricao();
 		s2.setId(chaveStartup++);
 		s2.setNome("AF System");
+		s2.setCategoria("TI");
+		s2.setUnidade("Limeira");
 		s2.setProjeto("WEB");
 		s2.setFerramentas(ferramentas);
 		s2.setDescricao(d2);
@@ -40,6 +44,8 @@ public class Banco {
 		Descricao d3 = new Descricao();
 		s3.setId(chaveStartup++);
 		s3.setNome("FIAT");
+		s3.setCategoria("TI");
+		s3.setUnidade("Limeira");
 		s3.setProjeto("Vender Carros");
 		s3.setFerramentas(ferramentas);
 		s3.setDescricao(d2);
@@ -53,10 +59,38 @@ public class Banco {
 		
 		Usuario u1 = new Usuario();
 		u1.setId(chaveusuario++);
+		u1.setNome("Erik");
+		u1.setRa("F282422");
+		u1.setCidade("Araras");
+		u1.setUnidadeUni("Limeira");
+		u1.setCurso("Computacao");
+		u1.setTelefone(null);
+		u1.setCelular("(19) 99701-4024");
+		u1.setEmail("erik311009r@gmail.com");
+		u1.isEstudante("NAO");
 		u1.setLogin("lindo");
 		u1.setSenha("123");
+		u1.adicionarStart(s1);
+		u1.adicionarStart(s3);
+		
+		Usuario u2 = new Usuario();
+		u2.setId(chaveusuario++);
+		u2.setNome("Sarah");
+		u2.setRa("F214HB1");
+		u2.setCidade("Araras");
+		u2.setUnidadeUni("Limeira");
+		u2.setCurso("Computacao");
+		u2.setTelefone(null);
+		u2.setCelular("(19) 99774-0406");
+		u2.setEmail("Sarah@gmail.com");
+		u2.isEstudante("NAO");
+		u2.setLogin("sarah");
+		u2.setSenha("123");
+		u2.adicionarStart(s2);
+		u2.adicionarStart(s3);
 		
 		listaUsuario.add(u1);
+		listaUsuario.add(u2);
 	}
 	
 	public List<Startups> getListaStartup() {
@@ -80,6 +114,15 @@ public class Banco {
 			}
 		}
 		
+		return null;
+	}
+	
+	public Usuario isUsuario(Integer id) {
+		for (Usuario u : listaUsuario) {
+			if(u.getId().equals(id)) {
+				return u;
+			}
+		}
 		return null;
 	}
 }

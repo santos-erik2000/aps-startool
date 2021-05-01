@@ -27,7 +27,9 @@
                             <li class="nav-item">
                             <a class="nav-link" href="#">Sobre Nós</a></li>
                             <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
-                            <button type="button" class="btn btn-secondary btn-sm">Login</button>
+                            <a href="/startool/entrada?acao=PaginaLogin">
+                            	<button type="button" class="btn btn-secondary btn-sm">Login</button>
+                            </a>
                         </ul>
                     </div>            
             </div>
@@ -48,7 +50,9 @@
                         </div>												
                         <div class="btn-main-section">
                             <button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
-						    <button class="button-to-log"><img src="assets/img/icon/login.png"/>Login</button>
+                             <a href="/startool/entrada?acao=PaginaLogin">
+						    	<button class="button-to-log"><img src="assets/img/icon/login.png"/>Login</button>
+						    	</a>
                         </div>						
 					</div>	
 				</div>

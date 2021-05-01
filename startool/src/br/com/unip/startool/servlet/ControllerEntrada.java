@@ -60,6 +60,7 @@ public class ControllerEntrada extends HttpServlet {
 			name = acao.execute(request,response);
 		}
 		else if(entradaAcao.equals("Perfil")) {
+			System.out.println("Vai pro perfil");
 			Perfil acao = new Perfil();
 			name = acao.execute(request,response);
 		}
