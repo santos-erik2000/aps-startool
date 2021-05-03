@@ -18,8 +18,8 @@ public class NovoUsuario {
 		String celular = request.getParameter("celular");
 		String email = request.getParameter("email");
 		String senha = request.getParameter("senha");
-		String login = request.getParameter("login");
 		String isEstudante = request.getParameter("estudante");
+		
 		
 		Usuario u = new Usuario();
 		u.isEstudante(isEstudante);
@@ -32,17 +32,21 @@ public class NovoUsuario {
 		u.setCelular(celular);
 		u.setEmail(email);
 		u.setSenha(senha);
-		u.setLogin(login);
 		
-		System.out.println(u.getEstudante());
 		Banco b = new Banco();
 		
-		b.adicionarUsu(u);
 		
-		request.setAttribute("usuario", u);
-
 		
-		return "forward:mensagem-sucess.jsp";
+		if(b.validaCadastro(ra)) {
+			System.out.println("Nao existe");
+			b.adicionarUsu(u);
+			request.setAttribute("usuario", u);
+			return "forward:mensagem-sucess.jsp";
+		}else {
+			System.out.println("Ja Existe");
+			return "redirect:mensagem-failed.jsp";
+			
+		}
 	}
 
 }

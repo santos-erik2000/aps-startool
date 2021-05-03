@@ -4,8 +4,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class PaginaCadastrar {
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
-		
-		System.out.println("Calcinha pretra");
+	
 		return "forward:pagina-cadastro.jsp";
 		
 		

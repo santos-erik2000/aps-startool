@@ -24,7 +24,7 @@
             <p style="font-size: 25px; color: #c4c4c4;">Faça Login para iniciar sua sessão</p>
             <form action="${LinkServletLogin}" method="post">
 	            <div>
-	                <input type="text" placeholder="Usuário ou E-mail" name="login" class="input-login-email">
+	                <input type="text" placeholder="Usuário ou E-mail" name="ra" class="input-login-email">
 	                <img src="assets/img/icon/mail.png" alt="" width="35">
 	            </div>
 	            <div>
@@ -45,9 +45,10 @@
 	                    <div class="col-md-3"></div>
 	                </div>
 	            </div>
+	            <input type="hidden" name="acao" value="ValidarLogin">
             </form>
             <div style="margin-top: 65px;">
-                <p style="font-size: 25px; color: #c4c4c4;">Ainda não tem conta? <a href="" class="link-sign-up-login">Cadastre-se</a></p>
+                <p style="font-size: 25px; color: #c4c4c4;">Ainda não tem conta? <a href="/startool/entrada?acao=PaginaCadastrar" class="link-sign-up-login">Cadastre-se</a></p>
             </div>
             
             </center>

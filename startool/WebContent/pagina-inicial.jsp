@@ -27,7 +27,9 @@
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                             <a class="nav-link" href="#">Sobre Nós</a></li>
-                            <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+                            <a href="/startool/entrada?acao=PaginaCadastrar">
+                            	<button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+                            </a>
                             <a href="/startool/entrada?acao=PaginaLogin">
                             	<button type="button" class="btn btn-secondary btn-sm">Login</button>
                             </a>
@@ -50,7 +52,9 @@
                             <p>Inicie sua Startup com a Startool.</p>
                         </div>												
                         <div class="btn-main-section">
-                            <button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
+                        	<a href="/startool/entrada?acao=PaginaCadastrar">
+                            	<button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
+                            </a>
                              <a href="/startool/entrada?acao=PaginaLogin">
 						    	<button class="button-to-log"><img src="assets/img/icon/login.png"/>Login</button>
 						    	</a>

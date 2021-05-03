@@ -6,7 +6,7 @@
 	<head>
 		<link rel="sortcut icon" href="assets/img/logo-nav.png" type="image/startool-companie" />
 		<meta charset="ISO-8859-1">
-		<title>Insert title here</title>
+		<title>PERFIL | STARTOOL</title>
 	</head>
 	<body>
 		
@@ -19,7 +19,6 @@
 		<p>Celular: ${usuario.celular}</p>
 		<p>Email: ${usuario.email}</p>
 		<p>Senha: ${usuario.senha}</p>
-		<p>Login: ${usuario.login}</p>
 		<p>Estudante: ${usuario.estudante}</p>
 		<p>Estartup Inscrita: ${usuario.listaNomeStartup}</p>
 	

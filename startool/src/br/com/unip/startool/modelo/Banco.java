@@ -68,7 +68,6 @@ public class Banco {
 		u1.setCelular("(19) 99701-4024");
 		u1.setEmail("erik311009r@gmail.com");
 		u1.isEstudante("NAO");
-		u1.setLogin("lindo");
 		u1.setSenha("123");
 		u1.adicionarStart(s1);
 		u1.adicionarStart(s3);
@@ -84,7 +83,6 @@ public class Banco {
 		u2.setCelular("(19) 99774-0406");
 		u2.setEmail("Sarah@gmail.com");
 		u2.isEstudante("NAO");
-		u2.setLogin("sarah");
 		u2.setSenha("123");
 		u2.adicionarStart(s2);
 		u2.adicionarStart(s3);
@@ -107,14 +105,25 @@ public class Banco {
 		listaUsuario.add(usuario);
 	}
 	
-	public Usuario validaLogin(String login, String senha) {
+	public Usuario validaLogin(String ra, String senha) {
 		for(Usuario usuario : listaUsuario) {
-			if(usuario.isCorrect(login, senha)) {
+			if(usuario.isCorrect(ra, senha)) {
 				return usuario;
 			}
 		}
 		
 		return null;
+	}
+	public boolean validaCadastro(String ra) {
+		for(Usuario usuario : listaUsuario) {
+			System.out.println(usuario.getRa()+ " - " + ra);
+			if(usuario.isCorrect(ra)) {
+				System.out.println("igual");
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	public Usuario isUsuario(Integer id) {

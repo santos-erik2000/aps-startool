@@ -15,7 +15,6 @@ public class Usuario {
 	private String celular;
 	private String email;
 	private String senha;
-	private String login;
 	private Estudante estudante;
 	private List<Startups> listaStartups = new ArrayList<Startups>();
 	private List<String> listaNomeStartup = new ArrayList<String>();
@@ -98,13 +97,6 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public String getLogin() {
-		return login;
-	}
-
-	public void setLogin(String usuario) {
-		this.login = usuario;
-	}
 	public void setListaNomeStartup(List<String> listaNomeStartup) {
 		this.listaNomeStartup = listaNomeStartup;
 	}
@@ -128,12 +120,19 @@ public class Usuario {
 	public List<Startups> getListaStartups() {
 		return listaStartups;
 	}
-	public boolean isCorrect(String usuario, String senha ) {
+	public boolean isCorrect(String ra, String senha ) {
 		
-		if(!this.login.equals(usuario)) {
+		if(!this.ra.equals(ra)) {
 			return false;
 		}
 		if(!this.senha.equals(senha) ) {
+			return false;
+		}
+		return true;
+	}
+	public boolean isCorrect(String ra) {
+		
+		if(!this.ra.equals(ra)) {
 			return false;
 		}
 		return true;

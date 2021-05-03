@@ -8,10 +8,10 @@
 <head>
 <link rel="sortcut icon" href="assets/img/logo-nav.png" type="image/startool-companie" />
 <meta charset="ISO-8859-1">
-<title>SUCCESS !!!</title>
+<title>:( FAILED !!!!)</title>
 </head>
 <body>
- 	<h1>PARABENS ${usuario.nome} </h1>
-	<a href="/startool/entrada?acao=PaginaLogin">Login</a>
+ 	<h1>RA - JA - EXISTE</h1>
+	<a href="/startool/entrada?acao=PaginaCadastrar">Voltar</a>
 </body>
 </html>

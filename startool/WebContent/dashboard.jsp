@@ -6,10 +6,13 @@
 <head>
 <link rel="sortcut icon" href="assets/img/logo-nav.png" type="image/startool-companie" />
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>DASHBOARD | STARTOOL</title>
 </head>
 <body>
 	<h1>Usuario ${usuario.nome} Online</h1>
+	<h3>
+		<a href="/startool/entrada?acao=Perfil&id=${usuario.id}">VER PERFIL</a>
+	</h3>
 	<c:forEach items="${startups}" var="startup">
 		 <p>Nome: ${startup.nome}</p>
 		 <p>Projeto: ${startup.projeto}</p>

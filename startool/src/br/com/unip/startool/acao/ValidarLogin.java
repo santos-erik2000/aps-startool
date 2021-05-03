@@ -13,12 +13,12 @@ import br.com.unip.startool.modelo.Usuario;
 public class ValidarLogin {
 
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
-		String login = request.getParameter("login");
+		String ra = request.getParameter("ra");
 		String senha = request.getParameter("senha");
 		
 		Banco banco = new Banco();
 		List<Startups> listaStartups = banco.getListaStartup();
-		Usuario usuario = banco.validaLogin(login, senha);
+		Usuario usuario = banco.validaLogin(ra, senha);
 		
 		if(usuario != null) {
 			System.out.println("Usuario Existe");
