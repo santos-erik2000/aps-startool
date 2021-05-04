@@ -40,7 +40,7 @@
 	                        <input type="checkbox">Lembre de mim
 	                    </div>
 	                    <div class="col-md-3">
-	                    	<input type="submit" class="button-to-log" title="Entrar">
+	                    	<button type="submit" class="button-to-log" >Logar</button>
 	                    </div>
 	                    <div class="col-md-3"></div>
 	                </div>

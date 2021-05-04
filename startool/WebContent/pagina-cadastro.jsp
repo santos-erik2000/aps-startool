@@ -121,7 +121,8 @@
                       <br>
                       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                       <a href="/startool/entrada?acao=PaginaLogin" class="btn btn-login btn-lg active" role="button" aria-pressed="true">Login</a>
-                          <input type="submit" class="btn btn-sign btn-lg active" title="Cadastrar"> 
+                      
+                      <button type="submit" class="btn btn-sign btn-lg active">Cadastrar</button>
                       </div>  
                       <input type="hidden" name="acao" value="NovoUsuario">
     </form>
