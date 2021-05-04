@@ -3,7 +3,7 @@ package br.com.unip.startool.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Usuario {
+public class Usuario extends Login {
 	
 	private Integer id;
 	private String nome;
@@ -14,7 +14,6 @@ public class Usuario {
 	private String telefone;
 	private String celular;
 	private String email;
-	private String senha;
 	private Estudante estudante;
 	private List<Startups> listaStartups = new ArrayList<Startups>();
 	private List<String> listaNomeStartup = new ArrayList<String>();
@@ -88,14 +87,6 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
 
 	public void setListaNomeStartup(List<String> listaNomeStartup) {
 		this.listaNomeStartup = listaNomeStartup;
@@ -120,23 +111,7 @@ public class Usuario {
 	public List<Startups> getListaStartups() {
 		return listaStartups;
 	}
-	public boolean isCorrect(String ra, String senha ) {
-		
-		if(!this.ra.equals(ra)) {
-			return false;
-		}
-		if(!this.senha.equals(senha) ) {
-			return false;
-		}
-		return true;
-	}
-	public boolean isCorrect(String ra) {
-		
-		if(!this.ra.equals(ra)) {
-			return false;
-		}
-		return true;
-	}
+	
 	
 	public void isEstudante(String verifique) {
 		 Estudante e;
