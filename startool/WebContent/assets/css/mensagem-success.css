@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+body {
+    background-color: #56CCF2;
+}
+* {
+    font-family: 'Archivo', sans-serif !important;
+  }
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.fundo-nome{
+    background-color: #32B768;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.letra-nome{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 39px;
+    text-align: center;
+    color:#000000;
+    margin: 5px;
+}
+
+.letra-frase{
+ 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+
+    color: #212529;
+}
