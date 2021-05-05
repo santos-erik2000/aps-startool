@@ -3,10 +3,11 @@ package br.com.unip.startool.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Usuario extends Login {
+public class Usuario {
 	
 	private Integer id;
 	private String nome;
+	private String senha;
 	private String ra;
 	private String cidade;
 	private String unidadeUni;
@@ -75,6 +76,12 @@ public class Usuario extends Login {
 	public String getCelular() {
 		return celular;
 	}
+	public String getSenha() {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
 	
 	public void setCelular(String celular) {
 		this.celular = celular;
@@ -125,8 +132,24 @@ public class Usuario extends Login {
 		this.setEstudante(e);
 		
 	}
+	public boolean isCorrect(String ra, String senha ) {
+		
+		if(!this.ra.equals(ra)) {
+			return false;
+		}
+		if(!this.senha.equals(senha) ) {
+			return false;
+		}
+		return true;
+	}
+	public boolean isCorrect(String ra) {
+		
+		if(!this.ra.equals(ra)) {
+			return false;
+		}
+		return true;
+	}
 
-	
 	public void adicionarStart(Startups star) {
 		listaStartups.add(star);
 		listaNomeStartup.add(star.getNome());

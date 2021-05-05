@@ -121,10 +121,10 @@
 			</div>
 			<br>
 			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+			<input type="hidden" name="acao" value="NovoUsuario">
 			<a href="/startool/entrada?acao=PaginaLogin" class="btn btn-login btn-lg active" role="button" aria-pressed="true">Login</a>
 			  <button type="submit" id="myBtn" data-toggle="modal" data-target="#modalExemplo" class="btn btn-sign btn-lg active" title="Cadastrar">Cadastrar </button>
 			</div>  
-				<input type="hidden" name="acao" value="NovoUsuario">
 		</form>
 		    <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
 		    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>

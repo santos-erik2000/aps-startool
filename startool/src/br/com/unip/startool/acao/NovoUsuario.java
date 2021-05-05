@@ -20,6 +20,9 @@ public class NovoUsuario {
 		String senha = request.getParameter("senha");
 		String isEstudante = request.getParameter("estudante");
 		
+		System.out.println("Chegou aqui");
+		System.out.println(nome);
+		System.out.println(isEstudante);
 		
 		Usuario u = new Usuario();
 		u.isEstudante(isEstudante);
