@@ -38,9 +38,9 @@
 
 .inputContainer i {
   position: absolute;
- right: 0;
- top: 8px;
- padding: 7px;
+  right: 0;
+  top: 8px;
+  padding: 7px;
 }
 .inputContainer {
   width: 100%;
@@ -48,9 +48,9 @@
   position: relative;
 }
 .icon {
-  padding: 15px;
+  padding: 10px;
   color: rgba(0, 0, 0, 0.78);
-  width: 70px;
+  width: 85px;
   position: absolute;
 
 }
@@ -58,7 +58,7 @@
   width: 100%;
   padding: 10px;
   text-align: left;
-  
+  border-radius: 6px;
 }
 .form-check-input:checked{
  background-color:#61CA86!important;

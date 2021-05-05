@@ -21,7 +21,7 @@
     <div class="menu-bar">
        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="assets/img/logo-nav.png"alt=""></a>
+                    <a class="navbar-brand" href="/startool/entrada?acao=ListarStartups"><img src="assets/img/logo-nav.png"alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"><i class="fa fa-bars"></i> </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
@@ -46,11 +46,12 @@
 				<div class="col-md-6">
 					<div class="left">
                         <div class="logo-main-class">
-                            <img src="assets/img/logo_name_main.png" alt="">
+                            <a href="/startool/entrada?acao=ListarStartups"><img src="assets/img/logo_name_main.png" alt=""></a>
                         </div>						
                         <div class="frase-main-section">
                             <p>Inicie sua Startup com a Startool.</p>
-                        </div>												
+                        </div>	
+                        <center>											
                         <div class="btn-main-section">
                         	<a href="/startool/entrada?acao=PaginaCadastrar">
                             	<button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
@@ -58,7 +59,8 @@
                              <a href="/startool/entrada?acao=PaginaLogin">
 						    	<button class="button-to-log"><img src="assets/img/icon/login.png"/>Login</button>
 						    	</a>
-                        </div>						
+                        </div>
+                        </center>						
 					</div>	
 				</div>
 
@@ -151,10 +153,10 @@
                     <div class="d-flex justify-content-center justify-content-lg-end">
                         <div class="footer_social text-center">
                             <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="https://twitter.com/" target="_blank"><i class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
                             </ul>
                         </div>
                     </div> 
