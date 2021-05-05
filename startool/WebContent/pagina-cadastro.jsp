@@ -27,12 +27,12 @@
 		<form action="${LinkServletCadastro}" method="post">
 			<div class="container">
 				<div class="row g-3">
-				    <div class="col">
+				    <div class="col-md-4">
 					    <div class="inputContainer">       
 				        	<input class="Field" type="text" name="nome" placeholder="Nome" style="border-radius: 6px;" />
 				        </div>
 			        </div>
-			        <div class="col">
+			        <div class="col-md-4">
 				        <div class="inputContainer">    
 				        	<input class="Field" id="campo_ra" type="text" name="ra" placeholder="RA" style="border-radius: 6px;" />
 				        </div>
@@ -57,19 +57,19 @@
 		   </div>
 			<div class="container">
 			  <div class="row g-3">
-			    <div class="col">
+			    <div class="col-md-4">
 			      <select class="form-select" name="estado" id="Estado">
 			        <option selected>Estado</option>
 			      </select>
 			      <br>
 			    </div>
-		        <div class="col">
+		        <div class="col-md-4">
 		          <select class="form-select" name="cidade" id="Cidade" >
 		            <option selected>Cidade</option>
 		          </select>
 		        <br>
 		        </div>
-		        <div class="col">
+		        <div class="col-md-4">
 		          <div class="inputContainer">
 		            <input class="Field" type="text" name="unidadeUni" placeholder="Unidade Unip" style="border-radius: 6px;"/>
 		          </div>
@@ -78,18 +78,18 @@
 			</div>
 			<div class="container">
 			  <div class="row g-3">
-			    <div class="col">
+			    <div class="col-md-4">
 			      <div class="inputContainer">	        
 			        <input class="Field" type="text" name="curso" placeholder="Curso" style="border-radius: 6px;"/>
 			      </div>
 			    </div>
-		        <div class="col">
+		        <div class="col-md-4">
 		          <div class="inputContainer">
 		            <i class="fa fa-phone icon"> </i>
 		            <input class="Field" type="text" name="telefone" placeholder="Telefone" style="border-radius: 6px;"/>
 		            </div>
 		        </div>
-		        <div class="col">
+		        <div class="col-md-4">
 		          <div class="inputContainer">
 		            <input class="Field" type="text" name="celular" placeholder="Celular" style="border-radius: 6px;"/>
 		          </div>
@@ -98,19 +98,19 @@
 			</div>
 			<div class="container">
 			  <div class="row g-3">
-			    <div class="col"> 
+			    <div class="col-md-4"> 
 			      	<div class="inputContainer">
 				        <i class="fa fa-envelope icon"> </i>
 				        <input class="Field" type="text" name="email" placeholder="Email" style="border-radius: 6px;"/>
 			       	</div>
 			     </div>
-		        <div class="col">
+		        <div class="col-md-4">
 		          <div class="inputContainer">
 		            <i class="fa fa-lock icon"> </i>
 		            <input class="Field" type="password" name="senha" placeholder="Senha" style="border-radius: 6px;" />
 		            </div>
 		        </div>
-		        <div class="col">
+		        <div class="col-md-4">
 		          <div class="inputContainer">
 		            <i class="fa fa-lock icon"> </i>
 		            <input class="Field" type="password" placeholder="Confirmar senha" style="border-radius: 6px;" />
@@ -130,5 +130,4 @@
 		    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 		    <script src="assets/js/script.js"></script>
 	</body>
-	<script type="text/javascript" src="jquery.js"></script>
 </html>
