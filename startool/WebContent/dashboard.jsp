@@ -19,31 +19,13 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<div style="background-color: #fff; height: 250px; margin: 40px 25px;">
-						<div style="background-color: #dac485;"> <p>Jogador 1</p></div> 
+				<c:forEach items="${startups}" var="startup">
+					<div class="col-md-6">
+						<div style="background-color: #fff; height: 250px; margin: 40px 25px;">
+							<div style="background-color: #dac485;"> <p>${startup.nome}</p></div> 
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div style="background-color: #fff; height: 250px; margin: 40px 25px;">
-						<div style="background-color: #dac485;"> <p>Jogador 1</p></div> 
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div style="background-color: #fff; height: 250px; margin: 40px 25px;">
-						<div style="background-color: #dac485;"> <p>Jogador 1</p></div> 
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div style="background-color: #fff; height: 250px; margin: 40px 25px;">
-						<div style="background-color: #dac485;"> <p>Jogador 1</p></div> 
-					</div>
-				</div>
+				</c:forEach> 
 			</div>
 		</div>
 	</section>
