@@ -28,7 +28,7 @@
 	        <div>
 	            <center>
 		            <a href="/startool/entrada?acao=ListarStartups">
-		            	<img src="assets/img/logo.png" alt="" width="260" height="340">
+		            	<img src="assets/img/logo.png" alt="" width="260" height="340" style="margin-top: 1%;">
 		            </a>
 		            <p style="font-size: 25px; color: #c4c4c4;">Faça Login para iniciar sua sessão</p>
 		            <form action="${LinkServletLogin}" method="post">
@@ -56,7 +56,7 @@
 			            <input type="hidden" name="acao" value="ValidarLogin">
 		            </form>
 		            <div style="margin-top: 65px;">
-		                <p style="font-size: 25px; color: #c4c4c4;">Ainda não tem conta? <a href="/startool/entrada?acao=PaginaCadastrar" class="link-sign-up-login">Cadastre-se</a></p>
+		                <p style="font-size: 25px; color: #c4c4c4;">Ainda não tem conta? <a href="/startool/entrada?acao=PaginaCadastrar" class="link-sign-up-login entrar_button">Cadastre-se</a></p>
 		            </div>	            
 	            </center>
 	        </div>

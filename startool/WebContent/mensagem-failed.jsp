@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/mensagem-failed.css">
         <link rel="sortcut icon" href="assets/img/logo-nav.png" type="image/startool-companie" />
         <meta charset="ISO-8859-1">
-        <title>FAILED !!!</title>
+        <title>CONTA EXISTE | STARTOOL</title>
     </head>
     <body>
         <div class="container">

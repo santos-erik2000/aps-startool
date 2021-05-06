@@ -1379,4 +1379,6 @@ table {
 	position:relative;
 	top:1px;
 }
-
+.entrar_button:hover{
+	color: var(--mainColor);
+}
