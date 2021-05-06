@@ -1337,5 +1337,46 @@ table {
   }
 }
 
+/* show me*/
+.showme {
+    display: none ;
+  }
 
+  .showhim:hover .showme {
+  display: inline-block;
+   cursor: pointer;
+   animation: createBox .25s;
+  }
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*botao*/
+.botao {
+	background:linear-gradient(to bottom, #ededed 5%, #ffffff 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #c7c7c7;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.botao:hover {
+	background:linear-gradient(to bottom, #ffffff 5%, #ededed 100%);
+	background-color:#ffffff;
+}
+.botao:active {
+	position:relative;
+	top:1px;
+}
 
