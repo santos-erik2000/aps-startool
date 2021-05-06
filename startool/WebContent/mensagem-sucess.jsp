@@ -24,7 +24,7 @@
             <div class="row m-5">
                 <div class="col-md-12 text-center">
                     <div class="fundo-nome">
-                        <p class="letra-nome">JORGINHO</p>
+                        <p class="letra-nome">${usuario.nome}</p>
                     </div>
                 </div>
             </div>
