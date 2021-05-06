@@ -1237,17 +1237,38 @@ table {
 
 .input-login-email {
   width: 600px;
+  background-color: #fff;
   font-size: 25px;
   padding: 20px;
   border-radius: 12px;
   margin: 45px 0px;
 }
 
+
+
+
 .input-login-pass {
     width: 600px;
+    background-color: #fff;
     font-size: 25px;
     padding: 20px;
     border-radius: 12px;
+}
+
+@media(max-width: 375px){
+  .input-login-user {
+    width: 75%;
+  }
+}
+
+@media(min-width: 710px){
+  .input-login-user {
+    width: 500px;
+  }
+}
+
+.input-login-user{
+  border: none;
 }
 
 .remember-me-login {

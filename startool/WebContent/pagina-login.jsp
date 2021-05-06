@@ -15,6 +15,13 @@
 	    <link rel="stylesheet" href="assets/css/style.css">
 	    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
 		<title>LOGIN | STARTOOL</title>
+		<style>
+			input:focus{
+				box-shadow: 0 0 0 0;
+				border: 0 none;
+				outline: 0;
+			} 
+		</style>
 	</head>
 	<body style="background-color: #323232;">
 	    <section>
@@ -25,12 +32,12 @@
 		            </a>
 		            <p style="font-size: 25px; color: #c4c4c4;">Faça Login para iniciar sua sessão</p>
 		            <form action="${LinkServletLogin}" method="post">
-			            <div>
-			                <input type="text" placeholder="Usuário ou E-mail" name="ra" class="input-login-email">
+			            <div class="input-login-email">
+			                <input type="text" placeholder="Usuário ou RA" class="input-login-user" name="ra">
 			                <img src="assets/img/icon/mail.png" alt="" width="35">
 			            </div>
-			            <div>
-			                <input type="password" placeholder="Senha" name="senha" class="input-login-pass">
+			            <div class="input-login-pass">
+			                <input type="password" placeholder="Senha" class="input-login-user" name="senha">
 			                <img src="assets/img/icon/lock.png" alt="" width="35">
 			            </div>
 		            		<input type="hidden" name="acao" value="ValidarLogin">
@@ -38,8 +45,7 @@
 			                
 			                <div class="row">
 			                    <div class="col-md-3"></div>
-			                     <div class="col-md-3 remember-me-login">
-			                        <input type="checkbox">Lembre de mim
+			                     <div class="col-md-3">
 			                    </div>
 			                    <div class="col-md-3">
 			                    	<input type="submit" class="button-to-log" title="Entrar">
