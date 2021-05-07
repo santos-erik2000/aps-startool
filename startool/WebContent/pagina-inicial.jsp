@@ -25,9 +25,11 @@
 			<div class="row margin-main">
 				<div class="col-md-6">
 					<div class="left">
+						<center>
                         <div class="logo-main-class">
                             <a href="/startool/entrada?acao=ListarStartups"><img src="assets/img/logo_name_main.png" alt=""></a>
-                        </div>						
+                        </div>
+                        </center>					
                         <div class="frase-main-section">
                             <p>Inicie sua Startup com a Startool.</p>
                         </div>	
@@ -65,7 +67,7 @@
 	</section>
 
     <!--====== CONTEUDO PART START ======-->
-    <section id="conteudo" class="conteudo_area pt-70 pb-70">
+    <section id="conteudo" class="conteudo_area pt-150 pb-70">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -85,7 +87,7 @@
         </div>
     </section>
     <!--====== CONTEUDO 2 PART START ======-->
-    <section id="conteudo" class="conteudo_area pt-70 pb-70">
+    <section id="conteudo" class="conteudo_area pt-150 pb-200">
         <div class="container">
             <div class="row align-items-center">
 
@@ -111,7 +113,10 @@
 <jsp:include page="/pages/footer.jsp" />
     
     
-    
+     <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
  
     <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
