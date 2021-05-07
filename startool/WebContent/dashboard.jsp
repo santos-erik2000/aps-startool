@@ -16,8 +16,7 @@
 <title>DASHBOARD | STARTOOL</title>
 </head>
 <body style="background-color: #56CCF2;">
-	<section>
-		<div class="container">
+	<!--<section>
 			<div class="row">
 				<c:forEach items="${startups}" var="startup">
 					<div class="col-md-6">
@@ -27,7 +26,34 @@
 					</div>
 				</c:forEach> 
 			</div>
-		</div>
+	</section>-->
+
+	<section>
+		<center>
+			
+			<div class="row" style="margin: 0 0;">
+					<div class="col-md-6">
+						<div style="background-color: #fff; height: 350px; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;">
+							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">NOME STARTUP</p></div> 
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="background-color: #fff; height: 350px; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;">
+							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">NOME STARTUP</p></div> 
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="background-color: #fff; height: 350px; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;">
+							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">NOME STARTUP</p></div> 
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div style="background-color: #fff; height: 350px; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;">
+							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">NOME STARTUP</p></div> 
+						</div>
+					</div>
+			</div>
+		</center>
 	</section>
 	<!-- <c:forEach items="${startups}" var="startup">
 		 <p>Nome: ${startup.nome}</p>
