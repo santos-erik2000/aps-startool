@@ -114,7 +114,7 @@
     
     
      <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top btn-hover">
+    <a href="#" class="back-top scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
     </a>
  

@@ -33,8 +33,8 @@
 				        </div>
 			        </div>
 			        <div class="col-md-4">
-				        <div class="inputContainer">    
-				        	<input class="Field" id="campo_ra" type="text" name="ra" placeholder="RA" style="border-radius: 6px;" />
+				        <div class="inputContainer">       
+				        	<input class="Field" id="campo_ra" type="text" name="ra" placeholder="RA | Usuario" style="border-radius: 6px;" required />
 				        </div>
 			       </div>
 			       <div class="col confirma-estudante"style="display: grid; margin-top: 0;">
@@ -56,7 +56,7 @@
 			   </div>
 		   </div>
 			<div class="container">
-			  <div class="row g-3">
+			  <div class="row g-3" >
 			    <div class="col-md-4">
 			      <select class="form-select" name="estado" id="Estado" required>
 			        <option selected>Estado</option>

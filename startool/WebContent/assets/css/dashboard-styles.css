@@ -155,6 +155,9 @@ a {
 .navImg {
   cursor: default;
 }
+.nome-dashboard:hover{
+	color: var(--mainColor);
+}
 
 /*Show navbar movil*/
 .show {
