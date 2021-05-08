@@ -1404,13 +1404,13 @@ table {
 .scroll-top {
    width: 60px;
    height: 60px;
-  background: #258d00;
+  background: #343a40;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 50%;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -1420,5 +1420,5 @@ table {
 }
 .scroll-top:hover {
   color: #fff;
-  background: #1f7800;
+  background: #56ccf2 !important;
 }
