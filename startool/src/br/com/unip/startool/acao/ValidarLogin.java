@@ -10,7 +10,7 @@ import br.com.unip.startool.modelo.Banco;
 import br.com.unip.startool.modelo.Startups;
 import br.com.unip.startool.modelo.Usuario;
 
-public class ValidarLogin {
+public class ValidarLogin implements Acao {
 
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		String ra = request.getParameter("ra");
@@ -25,10 +25,11 @@ public class ValidarLogin {
 			HttpSession sessao = request.getSession();
 			sessao.setAttribute("usuario", usuario);
 			sessao.setAttribute("startups", listaStartups);
-			return "redirect:dashboard.jsp";
+			System.out.println("Usuario Existe 33");
+			return "redirect:acesso?acao=Dashboard";
 		}else {
 			System.out.println("Errou");
-			return "redirect:pagina-login.jsp";
+			return "redirect:acesso?acao=PaginaLogin";
 		}
 	}
 

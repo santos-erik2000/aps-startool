@@ -38,7 +38,7 @@
                         	<a href="/startool/entrada?acao=PaginaCadastrar">
                             	<button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
                             </a>
-                             <a href="/startool/entrada?acao=PaginaLogin">
+                             <a href="/startool/acesso?acao=PaginaLogin">
 						    	<button class="button-to-log"><img src="assets/img/icon/login.png"/>Login</button>
 						    	</a>
                         </div>

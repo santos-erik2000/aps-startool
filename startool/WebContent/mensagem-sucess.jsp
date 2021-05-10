@@ -44,7 +44,7 @@
             <div class="row m-5">
                 <div class="col-md-12 justify-content-md-end">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="/startool/entrada?acao=PaginaLogin">
+                        <a href="/startool/acesso?acao=PaginaLogin">
                             <button type="button" class="btn btn-secondary btn-sm" id="font-login">Login</button>
                         </a>
                     </div>

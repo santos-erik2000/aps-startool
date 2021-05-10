@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServletResponse;
  * @author Bruno
  *
  */
-public class Dashboard {
+public class Dashboard implements Acao {
 
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		return null;
+		return "forward:dashboard.jsp";
 	}
 
 }

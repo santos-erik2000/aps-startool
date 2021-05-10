@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.unip.startool.modelo.Banco;
 import br.com.unip.startool.modelo.Usuario;
 
-public class NovoUsuario {
+public class NovoUsuario implements Acao {
 
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		String nome = request.getParameter("nome");
@@ -47,7 +47,8 @@ public class NovoUsuario {
 			return "forward:mensagem-sucess.jsp";
 		}else {
 			System.out.println("Ja Existe");
-			return "redirect:mensagem-failed.jsp";
+			request.setAttribute("usuario", u);
+			return "forward:mensagem-failed.jsp";
 			
 		}
 	}

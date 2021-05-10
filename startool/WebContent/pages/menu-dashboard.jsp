@@ -29,7 +29,7 @@
                             <span class="nav__name">Startup</span>
                         </a>
 
-                        <a href="/startool/entrada?acao=Perfil&id=${usuario.id}" class="nav__link">
+                        <a href="/startool/acesso?acao=Perfil&id=${usuario.id}" class="nav__link">
                             <i class='bx bx-user nav__icon' ></i>
                             <span class="nav__name">Meu perfil</span>
                         </a>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <a href="/startool/entrada?acao=ListarStartups" class="nav__link">
+                <a href="/startool/acesso?acao=Logout" class="nav__link">
                     <i class='bx bx-log-out nav__icon' ></i>
                     <span class="nav__name">Sair</span>
                 </a>

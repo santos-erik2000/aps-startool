@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.unip.startool.modelo.Banco;
 import br.com.unip.startool.modelo.Usuario;
 
-public class Perfil {
+public class Perfil implements Acao {
 
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		String idParam = request.getParameter("id");
