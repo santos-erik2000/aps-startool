@@ -14,6 +14,10 @@ public class Banco {
 		List<String> ferramentas = new ArrayList<>();
 		ferramentas.add("Git");
 		ferramentas.add("Eclipse");
+		ferramentas.add("Python");
+		ferramentas.add("MYSQL");
+		ferramentas.add("PHP");
+		ferramentas.add("JAVA");
 		
 		Startups s1 = new Startups();
 		Descricao d1 = new Descricao();

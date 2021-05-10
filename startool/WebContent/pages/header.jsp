@@ -11,7 +11,7 @@
                             <a href="/startool/entrada?acao=PaginaCadastrar">
                             	<button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
                             </a>
-                            <a href="/startool/entrada?acao=PaginaLogin">
+                            <a href="/startool/acesso?acao=PaginaLogin">
                             	<button type="button" class="btn btn-secondary btn-sm">Login</button>
                             </a>
                         </ul>
