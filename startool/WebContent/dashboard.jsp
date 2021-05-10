@@ -50,7 +50,7 @@
            							 <hr/>
              						<p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height: 20px; color: #000000;">${startup.descricao.assunto}</p>
            					 </div>  
-           					<a href="http://localhost:8080/startool/startup-detalhes.jsp#"><button type="button" class="btn btn-contato btn-lg" style="width: 90%px; height: 40px; color: #FFFFFF; background: #61CA86; border-radius: 8px;float:right;font-family: Archivo;">Saiba + </button> </a>     
+           					<a href="http://localhost:8080/startool/acesso?acao=InformaStartup&id=${startup.id}"><button type="button" class="btn btn-contato btn-lg" style="width: 90%px; height: 40px; color: #FFFFFF; background: #61CA86; border-radius: 8px;float:right;font-family: Archivo;">Saiba + </button> </a>     
 						</div>
 					</div>
 				</c:forEach> 

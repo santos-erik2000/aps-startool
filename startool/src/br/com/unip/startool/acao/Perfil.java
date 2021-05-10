@@ -10,7 +10,6 @@ public class Perfil implements Acao {
 
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
 		String idParam = request.getParameter("id");
-		System.out.println("Entrou no perfil com o ID: " + idParam);
 		Integer id = Integer.parseInt(idParam);
 		
 		Banco banco = new Banco();

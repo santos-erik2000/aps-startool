@@ -28,14 +28,13 @@
 	
 	   <section>
 		<center>
-	    <c:forEach items="${startups}" var="startup">
 	<div class="container">
     <div class="row">
         <div class="col-md-7 pt-4">
             <div class="float">
             <div style="width: 90%;  height: 359px; background: rgba(242, 242, 242, 0.81); border-radius: 8px; margin: 50px 25px 25px 25px;">
                <br>
-               <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height:20px; color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</p>
+               <h2 style="font-family: Archivo; font-style: normal; font-weight: bold;color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</h2>
                <hr/>
                <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height: 20px; color: #000000;">${startup.descricao.assunto}</p>
            </div>            
@@ -61,7 +60,7 @@
         <div class="col-md-7 pt-4">
             <div class="float-md-right">
             <div style ="width:90%;  margin: -40px 25px 25px 25px;">
-            <a href="http://localhost:8080/startool/dashboard.jsp#"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">  Voltar</i></button></a>
+            <a href="http://localhost:8080/startool/acesso?acao=Dashboard"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">  Voltar</i></button></a>
             <button type="button" class="btn btn-contato btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-phone icon">    Contato</i></button>
             </div> 
             </div>
@@ -73,13 +72,20 @@
               <br>
               <br>
                <br>
-               <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: center;color: #000000;">${startup.ferramentas}</p>
+               <table>
+               <c:forEach items="${startup.ferramentas}" var="ferramentas">
+               	<tr>
+               		<td>${ferramentas}</td>
+               	</c:forEach>
+               	</tr>
+               	
+               </table>
+              
                <hr/>
               </div>
         </div>
     </div>
     </div>  
-		</c:forEach> 
 		</div>
 		</center>
 	   </section>

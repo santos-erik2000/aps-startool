@@ -19,36 +19,36 @@ public class Banco {
 		Descricao d1 = new Descricao();
 		s1.setId(chaveStartup++);
 		s1.setNome("CI&T");
-		s1.setCategoria("TI");
-		s1.setUnidade("Limeira");
+		s1.setCategoria("Consultoria de TI");
+		s1.setUnidade("Campinas");
 		s1.setProjeto("Itau");
 		s1.setFerramentas(ferramentas);
 		s1.setDescricao(d1);
-		s1.getDescricao().setTitulo("Melhor Empresa do Mundo");
-		s1.getDescricao().setAssunto("Com certeza Disso !!!");
+		s1.getDescricao().setTitulo("Venha fazer parte da nossa Squad");
+		s1.getDescricao().setAssunto("kasdjfoiawejfoiasndfoiasjdfoiasjdfoasidfjasoidfjasdoifj");
 		
 		
 		Startups s2 = new Startups();
 		Descricao d2 = new Descricao();
 		s2.setId(chaveStartup++);
 		s2.setNome("AF System");
-		s2.setCategoria("TI");
-		s2.setUnidade("Limeira");
+		s2.setCategoria("Desenvolvedor de Software");
+		s2.setUnidade("Araras");
 		s2.setProjeto("WEB");
 		s2.setFerramentas(ferramentas);
 		s2.setDescricao(d2);
-		s2.getDescricao().setTitulo("Acabando com minha Vida");
-		s2.getDescricao().setAssunto("Com certeza Disso !!!");
+		s2.getDescricao().setTitulo("Venha para Araras");
+		s2.getDescricao().setAssunto("asldalsdmaskdfmaskdfjasdfpjasdfjasdopfjasdop");
 		
 		Startups s3 = new Startups();
 		Descricao d3 = new Descricao();
 		s3.setId(chaveStartup++);
 		s3.setNome("FIAT");
-		s3.setCategoria("TI");
-		s3.setUnidade("Limeira");
+		s3.setCategoria("Automovel");
+		s3.setUnidade("Araras");
 		s3.setProjeto("Vender Carros");
 		s3.setFerramentas(ferramentas);
-		s3.setDescricao(d2);
+		s3.setDescricao(d3);
 		s3.getDescricao().setTitulo("Vendendo Carros");
 		s3.getDescricao().setAssunto("A boa de Negocios");
 		
@@ -130,6 +130,14 @@ public class Banco {
 		for (Usuario u : listaUsuario) {
 			if(u.getId().equals(id)) {
 				return u;
+			}
+		}
+		return null;
+	}
+	public Startups isStartup(Integer id) {
+		for (Startups s : listaStartup) {
+			if(s.getId().equals(id)) {
+				return s;
 			}
 		}
 		return null;
