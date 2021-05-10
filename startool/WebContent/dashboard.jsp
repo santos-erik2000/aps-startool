@@ -43,7 +43,14 @@
 				<c:forEach items="${startups}" var="startup">
 					<div class="col-md-6">
 						<div style="background-color: #fff; height: 350px; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;">
-							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">${startup.nome}</p></div> 
+							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">${startup.nome}</p></div>
+							<div style="width: 90%; height: 220px; background: rgba(242, 242, 242, 0.81); border-radius: 8px;">
+             						<br>
+           						 <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height:20px; color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</p>
+           							 <hr/>
+             						<p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height: 20px; color: #000000;">${startup.descricao.assunto}</p>
+           					 </div>  
+           					<a href="http://localhost:8080/startool/startup-detalhes.jsp#"><button type="button" class="btn btn-contato btn-lg" style="width: 90%px; height: 40px; color: #FFFFFF; background: #61CA86; border-radius: 8px;float:right;font-family: Archivo;">Saiba + </button> </a>     
 						</div>
 					</div>
 				</c:forEach> 
