@@ -20,17 +20,7 @@
 <title>DASHBOARD | STARTOOL</title>
 </head>
 <body style="background-color: #56CCF2;">
-	<!--<section>
-			<div class="row">
-				<c:forEach items="${startups}" var="startup">
-					<div class="col-md-6">
-						<div style="background-color: #fff; height: 250px; margin: 40px 25px;">
-							<div style="background-color: #dac485;"> <p>${startup.nome}</p></div> 
-						</div>
-					</div>
-				</c:forEach> 
-			</div>
-	</section>-->
+
 	
 	<!-- MENU DASHBOARD -->
 	<jsp:include page="/pages/menu-dashboard.jsp" />
@@ -57,20 +47,6 @@
 			</div>
 		</center>
 	</section>
-	<!-- <c:forEach items="${startups}" var="startup">
-		 <p>Nome: ${startup.nome}</p>
-		 <p>Projeto: ${startup.projeto}</p>
-		 <p>Categoria: ${startup.categoria}</p>
-		 <p>Unidade: ${startup.unidade}</p>
-		<p>Ferramentas: ${startup.ferramentas}</p>
-		 <p>Descricao: ${startup.descricao.titulo}</p>
-		 <p>Assunto: ${startup.descricao.assunto}</p>
-		<br>
-		<br>
-		<br>
-	</c:forEach> -->
-	
-	
 	<!--===== MAIN JS =====-->
     <script src="assets/js/dashboard-main.js"></script>
 </body>
