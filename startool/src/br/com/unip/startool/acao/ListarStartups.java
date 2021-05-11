@@ -15,8 +15,6 @@ public class ListarStartups implements Acao {
 		Banco bancodados = new Banco();
 		List<Startups> listas =  bancodados.getListaStartup();
 		request.setAttribute("startups", listas);
-		
-		System.out.println("Vai pra co ntroler");
 	
 		return "forward:pagina-inicial.jsp";
 				
