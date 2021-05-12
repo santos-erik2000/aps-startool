@@ -23,6 +23,10 @@
                         </a>
                         
                        <div class="linha"></div>
+                       <a href="/startool/acesso?acao=Dashboard&id=${usuario.id}" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">Home</span>
+                        </a>
 
                         <a href="/startool/acesso?acao=MinhaStartup&id=${usuario.id}" class="nav__link">
                             <i class='bx bx-message-square-detail nav__icon' ></i>
