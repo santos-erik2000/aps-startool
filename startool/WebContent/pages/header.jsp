@@ -7,7 +7,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                            <a href="#" class="nav-link" href="#">Startups</a></li>
+                            <a href="/startool/entrada?acao=ListarStartups_pagina" class="nav-link" href="#">Startups</a></li>
                             <a href="/startool/entrada?acao=PaginaCadastrar">
                             	<button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
                             </a>
