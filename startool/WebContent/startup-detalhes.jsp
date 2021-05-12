@@ -34,9 +34,9 @@
             <div class="float">
             <div style="width: 90%;  height: 359px; background: rgba(242, 242, 242, 0.81); border-radius: 8px; margin: 50px 25px 25px 25px;">
                <br>
-               <h2 style="font-family: Archivo; font-style: normal; font-weight: bold;color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</h2>
+               <h2 style="font-family: Archivo; font-style: normal;color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</h2>
                <hr/>
-               <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height: 20px; color: #000000;">${startup.descricao.assunto}</p>
+               <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px;line-height: 20px;  color: #000000;">${startup.descricao.assunto}</p>
            </div>            
            </div>  
         </div>
@@ -59,9 +59,9 @@
          </div>
         <div class="col-md-7 pt-4">
             <div class="float-md-right">
-            <div style ="width:90%;  margin: -40px 25px 25px 25px;">
+            <div style ="width:90%;  margin:160px 25px 25px 25px;">
             <a href="http://localhost:8080/startool/acesso?acao=Dashboard"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">  Voltar</i></button></a>
-            <button type="button" class="btn btn-contato btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-phone icon">    Contato</i></button>
+            <a href="https://api.whatsapp.com/send?phone=+5519997740406"><button type="button" class="btn btn-contato btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-phone icon">Contato</i></button></a>
             </div> 
             </div>
         </div> 
@@ -89,6 +89,7 @@
 		</div>
 		</center>
 	   </section>
-
+<!--===== MAIN JS =====-->
+    <script src="assets/js/dashboard-main.js"></script>
 </body>
 </html>
