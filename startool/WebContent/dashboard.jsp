@@ -32,7 +32,7 @@
            
             <a href="#" class="header__name">
                 <i class='bx bx-user'></i>
-                <span class="header__name">Jorginho</span>
+                <span class="header__name">${usuario.nome}</span>
             </a>
         </header>
 
@@ -73,18 +73,19 @@
 		<center>
 			
 			<div class="row" style="margin: 0 0; ">
+				<c:forEach items="${startups}" var="startup">
 					<div class="col-md-6">
 						<div class="unique-startup-div">
-							<div class="startup-name-div"> <p class="startup-name">NOME STARTUP</div> 
+							<div class="startup-name-div"> <p class="startup-name">${startup.nome}</p></div> 
 							<div class="row">
 							<div class="col-md-11" style="padding: 32px;">
-								<div style="background-color: #c4c4c4;"><p style="margin-bottom: 0;">Detalhes Startup</p></div>
-								<div style="background-color: #dddccc;"><p style="padding: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+								<div style="background-color: #c4c4c4;"><h2 class="h2" style="margin-bottom: 0;color:#fff">${startup.descricao.titulo}</h2></div>
+								<div style="background-color: #dddccc;"><p style="padding: 24px;">${startup.descricao.assunto}</p></div>
 								<div class="row">
 									 <div class="col-md-6">
 									</div>
 									<div class="col-md-6">
-										<a style="text-decoration: none;" type="submit" class="button-to-log" href="">safasfsaf</a>
+										<a style="text-decoration: none;" type="submit" class="button-to-log" href="http://localhost:8080/startool/acesso?acao=InformaStartup&id=${startup.id}">Saiba + </a>
 									</div>
 									
 								</div>
@@ -93,44 +94,10 @@
 							</div>
 						</div>
 					</div>
-			</div>
-		</center>
-	</section>
-	
-	<!-- <section>
-		<center>
-			
-			<div class="row" style="margin: 0 0;">
-				<c:forEach items="${startups}" var="startup">
-					<div class="col-md-6">
-						<div style="background-color: #fff; height: 350px; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;">
-							<div style="background-color: #c4c4c4;"> <p style="text-align: left; font-size: 21px; padding: 12px; font-weight: 700; color: #fff;">${startup.nome}</p></div>
-							<div style="width: 90%; height: 220px; background: rgba(242, 242, 242, 0.81); border-radius: 8px;">
-             						<br>
-           						 <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height:20px; color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</p>
-           							 <hr/>
-             						<p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px; line-height: 20px; color: #000000;">${startup.descricao.assunto}</p>
-           					 </div>  
-           					<a href="http://localhost:8080/startool/acesso?acao=InformaStartup&id=${startup.id}"><button type="button" class="btn btn-contato btn-lg" style="width: 90%px; height: 40px; color: #FFFFFF; background: #61CA86; border-radius: 8px;float:right;font-family: Archivo;">Saiba + </button> </a>     
-						</div>
-					</div>
 				</c:forEach> 
 			</div>
 		</center>
-	</section>-->
-	<!-- <c:forEach items="${startups}" var="startup">
-		 <p>Nome: ${startup.nome}</p>
-		 <p>Projeto: ${startup.projeto}</p>
-		 <p>Categoria: ${startup.categoria}</p>
-		 <p>Unidade: ${startup.unidade}</p>
-		<p>Ferramentas: ${startup.ferramentas}</p>
-		 <p>Descricao: ${startup.descricao.titulo}</p>
-		 <p>Assunto: ${startup.descricao.assunto}</p>
-		<br>
-		<br>
-		<br>
-	</c:forEach> -->
-	
+	</section>
 	
 	<!--===== MAIN JS =====-->
     <script src="assets/js/dashboard-main.js"></script>
