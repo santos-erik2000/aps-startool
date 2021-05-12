@@ -26,6 +26,17 @@
   box-sizing: border-box;
 }
 
+.unique-startup-div {
+	background-color: #fff; height: auto; border-radius: 26px; width: 80%; margin: 50px 25px 25px 75px;
+}
+
+@media(max-width: 750px){
+	.unique-startup-div {
+		width: 100%; margin: 0;
+	}
+}
+
+
 body {
   position: relative;
   margin: var(--header-height) 0 0 0;
@@ -155,9 +166,6 @@ a {
 .navImg {
   cursor: default;
 }
-.nome-dashboard:hover{
-	color: var(--mainColor);
-}
 
 /*Show navbar movil*/
 .show {
@@ -213,3 +221,41 @@ a {
     padding-left: calc(var(--nav-width) + 188px);
   }
 }
+
+.startup-name {
+  text-align: left; 
+  font-size: 21px; 
+  padding: 12px;
+  font-weight: 700; 
+  color: #fff;
+}
+
+.section-dashboard {
+  margin-top: 85px; margin-left: 0px;
+}
+
+@media(max-width: 700px){
+
+}
+
+.div-main-dashboard {
+  background-color: #fff; height: auto; border-radius: 26px; width: 80%; margin: 50px 25px 25px 25px;
+}
+
+
+
+.startup-name-div {
+  background-color: #c4c4c4; border-top-left-radius: 26px; border-top-right-radius: 26px;
+}
+
+.button-to-log {
+  margin-top: 15px;
+  border: 0;
+  font-size: 20px;
+  background-color: #61ca86;
+  padding: 15px 59px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+

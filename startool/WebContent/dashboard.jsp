@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -20,13 +21,83 @@
 <title>DASHBOARD | STARTOOL</title>
 </head>
 <body style="background-color: #56CCF2;">
-
 	
 	<!-- MENU DASHBOARD -->
-	<jsp:include page="/pages/menu-dashboard.jsp" />
-	<!-- END MENU DASHBOARD-->
+	<body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+           
+            <a href="#" class="header__name">
+                <i class='bx bx-user'></i>
+                <span class="header__name">Jorginho</span>
+            </a>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>          
+                    <div class="nav__list">
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-grid-alt nav__icon'></i>
+                                <img class="navImg"src="assets/img/logo-menu-dashboard.png" alt="">                       
+                        </a>
+                        
+                       <div class="linha"></div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">Startup</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">Meu perfil</span>
+                        </a>
+                       
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+	<!-- END MENU DASHBOARD -->
 	
-	<section>
+	<section class="section-dashboard">
+		<center>
+			
+			<div class="row" style="margin: 0 0; ">
+					<div class="col-md-6">
+						<div class="unique-startup-div">
+							<div class="startup-name-div"> <p class="startup-name">NOME STARTUP</div> 
+							<div class="row">
+							<div class="col-md-11" style="padding: 32px;">
+								<div style="background-color: #c4c4c4;"><p style="margin-bottom: 0;">Detalhes Startup</p></div>
+								<div style="background-color: #dddccc;"><p style="padding: 24px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+								<div class="row">
+									 <div class="col-md-6">
+									</div>
+									<div class="col-md-6">
+										<a style="text-decoration: none;" type="submit" class="button-to-log" href="">safasfsaf</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-md-1"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</center>
+	</section>
+	
+	<!-- <section>
 		<center>
 			
 			<div class="row" style="margin: 0 0;">
@@ -46,7 +117,21 @@
 				</c:forEach> 
 			</div>
 		</center>
-	</section>
+	</section>-->
+	<!-- <c:forEach items="${startups}" var="startup">
+		 <p>Nome: ${startup.nome}</p>
+		 <p>Projeto: ${startup.projeto}</p>
+		 <p>Categoria: ${startup.categoria}</p>
+		 <p>Unidade: ${startup.unidade}</p>
+		<p>Ferramentas: ${startup.ferramentas}</p>
+		 <p>Descricao: ${startup.descricao.titulo}</p>
+		 <p>Assunto: ${startup.descricao.assunto}</p>
+		<br>
+		<br>
+		<br>
+	</c:forEach> -->
+	
+	
 	<!--===== MAIN JS =====-->
     <script src="assets/js/dashboard-main.js"></script>
 </body>
