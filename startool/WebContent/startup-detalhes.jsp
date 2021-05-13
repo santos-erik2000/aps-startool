@@ -36,10 +36,13 @@
                <br>
                <h2 style="font-family: Archivo; font-style: normal;color: rgba(0, 0, 0, 0.8);">${startup.descricao.titulo}</h2>
                <hr/>
-               <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 18px;line-height: 20px;  color: #000000;">${startup.descricao.assunto}</p>
-           </div>            
-           </div>  
+               <br>
+               <br>
+               <br>
+               <p style="font-family: Archivo; font-style: normal;font-weight: bold; line-height: 26px; text-align: center; color: rgba(0, 0, 0, 0.8);">${startup.descricao.assunto}</p>
+            </div>            
         </div>
+       </div>  
         <div class="col-md-5 pt-4">
             <div style="width: 90%; height: 359px; background: rgba(242, 242, 242, 0.81); border-radius: 8px; margin: 50px 25px 25px 25px;">
                 <br>
@@ -47,10 +50,8 @@
                 <hr/>
                 <br>
                 <br>
-                <br>
                 <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: center;color: #000000;">Projeto Atual : ${startup.projeto}</p>
                 <hr/>
-                <br>
                 <br>
                 <br>
                 <p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px;line-height: 26px; text-align: center; color: #000000;">Categoria: ${startup.categoria}</p>
@@ -67,21 +68,12 @@
         </div> 
         <div class="col-md-5 pt-4">
               <div style="width: 90%; height: 288px; background: rgba(242, 242, 242, 0.81); border-radius: 8px; margin: 50px 25px 25px 25px; margin-top:-25px;">
-              <p style="width:90%; font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #000000;">Ferramentas:</p>
-              <hr/>
               <br>
+              <p style="width:90%; font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: left; color: #000000;">Ferramentas:</p>
               <br>
-               <br>
-               <table>
                <c:forEach items="${startup.ferramentas}" var="ferramentas">
-               	<tr>
-               		<td>${ferramentas}</td>
+               		<label style="width: 100px; height: 30px;background-color:#C4C4C4; border-radius: 4px;">${ferramentas}</label>
                	</c:forEach>
-               	</tr>
-               	
-               </table>
-              
-               <hr/>
               </div>
         </div>
     </div>
