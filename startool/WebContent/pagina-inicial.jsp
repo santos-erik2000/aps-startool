@@ -35,7 +35,7 @@
                         </div>	
                         <center>											
                         <div class="btn-main-section">
-                        	<a href="/startool/entrada?acao=PaginaCadastrar">
+                        	<a href="/startool/entrada?acao=PaginaCadastrar" id="btn-cadastrar-tirando-color">
                             	<button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
                             </a>
                              <a href="/startool/acesso?acao=PaginaLogin">

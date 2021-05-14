@@ -104,6 +104,12 @@ video {
   vertical-align: baseline;
   list-style-type: none;
 }
+#btn-cadastrar-tirando-color{
+	color: transparent !important ;
+}
+#btn-cadastrar-tirando-color:hover{
+	color: transparent !important ;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
