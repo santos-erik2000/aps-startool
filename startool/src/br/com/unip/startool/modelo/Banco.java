@@ -29,7 +29,7 @@ public class Banco {
 		s1.setFerramentas(ferramentas);
 		s1.setDescricao(d1);
 		s1.getDescricao().setTitulo("Venha fazer parte da nossa Squad");
-		s1.getDescricao().setAssunto("kasdjfoiawejfoiasndfoiasjdfoiasjdfoasidfjasoidfjasdoifj");
+		s1.getDescricao().setAssunto("kasdjfoiawej foiasndfoias jdfoiasj dfoasidfj asoidf jasd oifj");
 		
 		
 		Startups s2 = new Startups();
