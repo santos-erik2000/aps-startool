@@ -64,7 +64,7 @@ public class Banco {
 		Usuario u1 = new Usuario();
 		u1.setId(chaveusuario++);
 		u1.setNome("Erik");
-		u1.setRa("F282422");
+		u1.setRa("123");
 		u1.setCidade("Araras");
 		u1.setUnidadeUni("Limeira");
 		u1.setCurso("Computacao");

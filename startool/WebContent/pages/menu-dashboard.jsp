@@ -17,7 +17,7 @@
                 <div>          
                     <div class="nav__list">
                         
-                        <a href="#" class="nav__link">
+                        <a href="/startool/acesso?acao=Dashboard" class="nav__link">
                             <i class='bx bx-grid-alt nav__icon'></i>
                                 <img class="navImg"src="assets/img/logo-menu-dashboard.png" alt="">                       
                         </a>
