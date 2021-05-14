@@ -88,7 +88,7 @@ public class Banco {
 		u2.setEmail("Sarah@gmail.com");
 		u2.isEstudante("NAO");
 		u2.setSenha("123");
-		u2.adicionarStart(s2);
+		//u2.adicionarStart(s2);
 		
 		listaUsuario.add(u1);
 		listaUsuario.add(u2);
