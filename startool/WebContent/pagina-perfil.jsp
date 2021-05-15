@@ -15,13 +15,12 @@
         <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
         <link rel="stylesheet" href="assets/css/pagina-perfil.css">
 
-        <title>Menu responsivo</title>
+        <title>MEU PERFIL</title>
     </head>
-    <body id="body-pd">
-      <!-- MENU DASHBOARD -->
+    <!-- MENU DASHBOARD -->
 	<jsp:include page="/pages/menu-dashboard.jsp" />
 	<!-- END MENU DASHBOARD-->
-
+	
         <!-- MEU PERFIL -->
         <div class="container-perfil">
             <div class="bg">
@@ -40,7 +39,7 @@
                         <h3 class="dados">Telefone: ${usuario.telefone}</h3>
                         <h3 class="dados">Estudante: ${usuario.estudante}</h3>
                         <h3 class="dados">Curso: ${usuario.curso}</h3>
-                        <h3 class="dados">Estartup Inscrita: ${usuario.listaNomeStartup}</h3>
+                        <h3 class="dados">Startup Inscrita: ${usuario.listaNomeStartup}</h3>
                     </div>
                     
         
@@ -53,18 +52,14 @@
                     </div>
         
                     <div class="dadosPessoa">
-                        <h3 class="dados">RA: ${usuario.ra}</h3>
+                        <h3 class="dados">RA/Usuário: ${usuario.ra}</h3>
                         <h3 class="dados">Senha: ${usuario.senha}</h3>
                         <h3 class="dados">Email: ${usuario.email}</h3>
                     </div>
                 </div>
             </div>
         </div>
-        
-
-
-
-
+       
         <!--===== MAIN JS =====-->
         <script src="assets/js/dashboard-main.js"></script>
         <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>

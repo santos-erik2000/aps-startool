@@ -33,16 +33,16 @@ body {
   background-color: rgba(242, 242, 242, 0.81);
   display: flex;
   flex-direction: column;
-  width: 695px;
+  width: 620px;
   padding-bottom: 30px;
   border-radius: 10px;
-  margin: 50px 50px 50px 50px;
+  margin: 50px 20px 50px 90px;
 }
 
 .dadosAcesso {
   width: 580px;
   background-color: rgba(242, 242, 242, 0.81);
-  margin: 50px 50px 50px 0;
+  margin: 50px 25px 50px 0;
   padding-bottom: 30px;
   border-radius: 10px;
 }
@@ -104,9 +104,10 @@ body {
   .dadosPessoal,
   .dadosAcesso {
     width: 100%;
+    margin-left: 10%;  
   }
   .dadosAcesso {
-    margin-left: 50px;
+    margin-left: 10%;
   }
   .dados {
     font-size: 0.8rem;

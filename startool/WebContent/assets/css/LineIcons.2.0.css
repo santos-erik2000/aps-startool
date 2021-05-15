@@ -523,7 +523,8 @@ Author: lineicons.com
 }
 
 .lni-chevron-up::before {
-  content: "\ea5e";
+  content: "f077";
+  color: white;
 }
 
 .lni-chrome::before {

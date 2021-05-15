@@ -61,8 +61,8 @@
         <div class="col-md-7 pt-4">
             <div class="float-md-right">
             <div style ="width:90%;  margin:160px 25px 25px 25px;">
-            <a href="http://localhost:8080/startool/acesso?acao=Dashboard"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">  Voltar</i></button></a>
-            <a href="https://api.whatsapp.com/send?phone=+5519997740406"><button type="button" class="btn btn-contato btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-phone icon">Contato</i></button></a>
+            <a href="http://localhost:8080/startool/acesso?acao=Dashboard"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">Voltar</i></button></a>
+            <a href="https://api.whatsapp.com/send?phone=+5519997740406"><button type="button" class="btn btn-contato btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-phone icon" style="padding: 3%;">Contato</i></button></a>
             </div> 
             </div>
         </div> 
@@ -72,7 +72,7 @@
               <p style="width:90%; font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: left; color: #000000;">Ferramentas:</p>
               <br>
                <c:forEach items="${startup.ferramentas}" var="ferramentas">
-               		<label style="width: 100px; height: 30px;background-color:#C4C4C4; border-radius: 4px;">${ferramentas}</label>
+               		<label style="width: 100px; height: 30px;background-color:#C4C4C4; border-radius: 4px; margin: 2%;">${ferramentas}</label>
                	</c:forEach>
               </div>
         </div>

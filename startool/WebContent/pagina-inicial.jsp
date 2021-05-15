@@ -10,6 +10,7 @@
     <link rel="sortcut icon" href="assets/img/logo-nav.png" type="image/startool-companie" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/fonts/fonts/lineicons/font-css/LineIcons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
@@ -129,7 +130,7 @@
     
      <!-- ========================= scroll-top ========================= -->
       <a href="#" class="back-top scroll-top btn-hover">
-        <i class="lni lni-chevron-up"></i>
+        <i class="fas fa-chevron-up" style="color:white !important;"></i>
       </a>
  
     <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
