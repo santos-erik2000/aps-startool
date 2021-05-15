@@ -56,9 +56,48 @@ public class Banco {
 		s3.getDescricao().setTitulo("Vendendo Carros");
 		s3.getDescricao().setAssunto("A boa de Negocios");
 		
+		Startups s4 = new Startups();
+		Descricao d4 = new Descricao();
+		s4.setId(chaveStartup++);
+		s4.setNome("Faurecia");
+		s4.setCategoria("Automovel");
+		s4.setUnidade("Limeira");
+		s4.setProjeto("Produzem escapamento");
+		s4.setFerramentas(ferramentas);
+		s4.setDescricao(d4);
+		s4.getDescricao().setTitulo("Escapa nem ventos");
+		s4.getDescricao().setAssunto("Nascemos no ano de 1500, e somos a melhor fabrica do brazil, presando o meio ambiente. Somo MULTI !!");
+		
+		Startups s5 = new Startups();
+		Descricao d5 = new Descricao();
+		s5.setId(chaveStartup++);
+		s5.setNome("Nestle");
+		s5.setCategoria("Alimentos");
+		s5.setUnidade("Araras");
+		s5.setProjeto("Produzem Alimentos");
+		s5.setFerramentas(ferramentas);
+		s5.setDescricao(d5);
+		s5.getDescricao().setTitulo("Melhor Leitinho BR");
+		s5.getDescricao().setAssunto("Somos suicos, E Somos uma Multi que caso vc entre, ira se orgulhar muito !!!");
+		
+		Startups s6 = new Startups();
+		Descricao d6 = new Descricao();
+		s6.setId(chaveStartup++);
+		s6.setNome("MCdonalds");
+		s6.setCategoria("Fast Food");
+		s6.setUnidade("Toda Regiao do Brasil");
+		s6.setProjeto("Produzem Alimentos");
+		s6.setFerramentas(ferramentas);
+		s6.setDescricao(d6);
+		s6.getDescricao().setTitulo("Melhor que BK");
+		s6.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
+		
 		listaStartup.add(s1);
 		listaStartup.add(s2);
 		listaStartup.add(s3);
+		listaStartup.add(s4);
+		listaStartup.add(s5);
+		listaStartup.add(s6);
 		
 		
 		Usuario u1 = new Usuario();

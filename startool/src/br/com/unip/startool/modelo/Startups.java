@@ -1,9 +1,10 @@
 package br.com.unip.startool.modelo;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-public class Startups {
+public class Startups implements Comparable<Startups>{
 	
 	private Integer id;
 	private String login;
@@ -73,5 +74,10 @@ public class Startups {
 	public String toString() {
 		return "Nome: " + nome + " Projeto: " + projeto + " Unidade: " + unidade + " Ferramenta: " + ferramentas 
 				+ " Descricao: " + descricao;
+	}
+
+	@Override
+	public int compareTo(Startups o) {
+		return this.nome.compareTo(o.getNome());
 	}
 }
