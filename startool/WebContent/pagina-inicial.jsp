@@ -35,7 +35,7 @@
                         </div>	
                         <center>											
                         <div class="btn-main-section">
-                        	<a href="/startool/entrada?acao=PaginaCadastrar" id="btn-cadastrar-tirando-color">
+                        	<a href="/startool/entrada?acao=PaginaCadastrar">
                             	<button class="button-to-cad"><img src="assets/img/icon/cadastro.png"/>Cadastrar</button>
                             </a>
                              <a href="/startool/acesso?acao=PaginaLogin">
@@ -112,8 +112,9 @@
                 <div class="col-lg-5 order-last order-lg-last d-flex justify-content-lg-end">
                     <div class="conteudo-content-right">
                         <div class="conteudo-about">
-                            <h1 class="mb-35 counteudo_tittle">Começar a Sua Startup Com a Gente</h1>
-                            <p class="mb-35 conteudo-frase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore hdht dolore magna aliquyam erat, sed diam voluptua.</p>         
+                            <h1 class="mb-35 counteudo_tittle">Começe a Sua Startup Com a Gente</h1>
+                            <p class="mb-35 conteudo-frase">Se interessou pela proposta da Startool?<br>
+                            <a  href="/startool/entrada?acao=PaginaCadastrar" class="conteudo-frase" style="cursor:pointer; font-weight: 900;">Cadastre-se</a>e Incie sua jornada conosco!</p>     
                         </div>
                     </div>
                 </div>               
@@ -126,9 +127,9 @@
     
     
      <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="back-top scroll-top btn-hover">
+      <a href="#" class="back-top scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
-    </a>
+      </a>
  
     <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
