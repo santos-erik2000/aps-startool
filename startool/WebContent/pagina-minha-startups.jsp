@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
 		<title>Insert title here</title>
 	</head>
-	<body>
+	<body style="background-color: #56CCF2;">
 	  <!--====== NAV PART START ======-->
 		<jsp:include page="/pages/menu-dashboard.jsp" />
 	
@@ -26,32 +26,49 @@
 		<c:if test="${empty usuario.listaStartups}">
 			<jsp:include page="/pages/tabela-sem-startup.jsp" />
 		</c:if>
+		<section class="section-dashboard">
+		<center>
 		<c:if test="${not empty usuario.listaStartups}">
-			<table class="table table-striped table-hover">
+			<div class="row" style="margin: 0 0; ">
+					<div class="col-md-6" style="margin: 0 0; width: 95%; height: 421px; border-radius: 8px;">
+						<div class="unique-startup-div">
+							<div class="startup-name-div"> <p class="startup-name">Startup que está participando </p> <p class="startup-name" style = "margin-top: -80px; text-align: right; "><i class="fas fa-minus"></i></p></div> 
+							<div class="row" style="margin: 0 0; ">
+							<div class="col-md-11" style="width: 95%; height: 353px; ">
+							  <br>
+							  <br>
+							  <br>
+			<table class="table table-striped table-hover" style="margin-top:-60px;">
 				 <thead>
 				   <tr>
-				   	<th>Nome</th>
-				   	<th>Projeto</th>
-				   	<th>categoria</th>
-				   	<th>Edicoes</th>
+				   	<th style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">Nome</th>
+				   	<th style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">Projeto</th>
+				   	<th style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">categoria</th>
+				   	<th style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">Edições</th>
 				   </tr>
 				 </thead>
 				 <tbody>
 				  <c:forEach items="${usuario.listaStartups}" var="startpsUsu">
 				    <tr>
-					    <td>${startpsUsu.nome}</td>
-					    <td>${startpsUsu.projeto}</td>
-					    <td>${startpsUsu.categoria}</td>
-						    <td>
-						    	<a href="#">Alterar</a>
-						    	<a href="">Excluir</a>
+					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.nome}</td>
+					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.projeto}</td>
+					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.categoria}</td>
+						    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">
+						    	<a href="#" <button type="button" class="btn btn-success" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button></a>
+						    	<a href=""> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
 						    </td>
 					    </tr> 
 					    </c:forEach>
 					  </tbody>
 				</table>
 		</c:if>
-		
+							</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</center>
+		</section>
 		<script src="assets/js/dashboard-main.js"></script>
 		
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
