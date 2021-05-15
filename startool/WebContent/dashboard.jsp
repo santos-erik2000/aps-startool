@@ -35,14 +35,14 @@
 						<div class="unique-startup-div">
 							<div class="startup-name-div"> <p class="startup-name">${startup.nome}</p></div> 
 							<div class="row">
-							<div class="col-md-11" style="padding: 32px;">
+							<div class="col-md-11" style="padding: 32px; width: 100%;">
 								<div style="background-color: #c4c4c4;"><h2 class="h2" style="margin-bottom: 0;color:#fff">${startup.descricao.titulo}</h2></div>
 								<div style="background-color: #dddccc;"><p style="padding: 24px;">${startup.descricao.assunto}</p></div>
 								<div class="row">
 									 <div class="col-md-6">
 									</div>
 									<div class="col-md-6">
-										<a style="text-decoration: none;" type="submit" class="button-to-log" href="http://localhost:8080/startool/acesso?acao=InformaStartup&id=${startup.id}">Saiba + </a>
+										<a style="text-decoration: none; float: right;" type="submit" class="button-to-log saiba-mais" href="http://localhost:8080/startool/acesso?acao=InformaStartup&id=${startup.id}">Saiba + </a>
 									</div>
 									
 								</div>
