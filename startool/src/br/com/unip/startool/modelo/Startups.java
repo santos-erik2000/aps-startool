@@ -7,8 +7,6 @@ import java.util.List;
 public class Startups implements Comparable<Startups>{
 	
 	private Integer id;
-	private String login;
-	private String senha;
 	private String nome;
 	private String projeto; 
 	private String unidade;
