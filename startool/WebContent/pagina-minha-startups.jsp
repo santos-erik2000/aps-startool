@@ -14,8 +14,7 @@
 		<link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
 		<link rel="stylesheet" href="assets/css/dashboard-styles.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-	
-	<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
 		<title>Insert title here</title>
 	</head>
 	<body style="background-color: #56CCF2;">
@@ -32,6 +31,7 @@
 			<div class="row" style="margin: 0 0; ">
 					<div class="col-md-6" style="margin: 0 0; width: 95%; height: 421px; border-radius: 8px;">
 						<div class="unique-startup-div">
+						<div class="table-responsive col-lg-12">
 							<div class="startup-name-div"> <p class="startup-name">Startup que está participando </p> <p class="startup-name" style = "margin-top: -80px; text-align: right; "><i class="fas fa-minus"></i></p></div> 
 							<div class="row" style="margin: 0 0; ">
 							<div class="col-md-11" style="width: 95%; height: 353px; ">
@@ -54,18 +54,19 @@
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.projeto}</td>
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.categoria}</td>
 						    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">
-						    	<a href="#" <button type="button" class="btn btn-success" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button></a>
-						    	<a href=""> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
+						    	<a href="#"> <button type="button" class="btn btn-success" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button></a>
+						    	<a href="#0"> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
 						    </td>
 					    </tr> 
 					    </c:forEach>
 					  </tbody>
 				</table>
 		</c:if>
-							</div>
-							</div>
-						</div>
-					</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
 			</div>
 		</center>
 		</section>

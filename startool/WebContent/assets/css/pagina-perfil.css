@@ -1,0 +1,115 @@
+body {
+  display: inline-block;
+  position: relative;
+  padding: 0 1rem;
+  transition: 0.5s;
+  background-color: #56ccf2 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== MEU PERFIL */
+.container-perfil {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  width: 100%;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dadosPessoal {
+  /* height: 150px;
+  width: 150px; */
+  background-color: rgba(242, 242, 242, 0.81);
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  margin: 50px 20px 50px 90px;
+}
+
+.dadosAcesso {
+  width: 580px;
+  background-color: rgba(242, 242, 242, 0.81);
+  margin: 50px 25px 50px 0;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.tituloDados {
+  width: 100%;
+  background-color: #c4c4c4;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tituloDados h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.traco {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  align-self: center;
+}
+
+.dadosUsuario {
+  margin: 10px 0px;
+}
+
+.dados {
+  font-size: 1.1rem;
+  color: #c4c4c4;
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1025px) {
+  .bg {
+    margin: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .dadosPessoal {
+    width: 100%;
+  }
+  .tituloDados h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 550px) {
+  .bg {
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+  }
+  .dadosPessoal,
+  .dadosAcesso {
+    width: 100%;
+    margin-left: 10%;  
+  }
+  .dadosAcesso {
+    margin-left: 10%;
+  }
+  .dados {
+    font-size: 0.8rem;
+  }
+}
