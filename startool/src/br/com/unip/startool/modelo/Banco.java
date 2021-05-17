@@ -92,12 +92,38 @@ public class Banco {
 		s6.getDescricao().setTitulo("Melhor que BK");
 		s6.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
 		
+		Startups s7 = new Startups();
+		Descricao d7 = new Descricao();
+		s7.setId(chaveStartup++);
+		s7.setNome("NUBANK");
+		s7.setCategoria("Fast Food");
+		s7.setUnidade("Toda Regiao do Brasil");
+		s7.setProjeto("Produzem Alimentos");
+		s7.setFerramentas(ferramentas);
+		s7.setDescricao(d7);
+		s7.getDescricao().setTitulo("Melhor que BK");
+		s7.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
+		
+		Startups s8 = new Startups();
+		Descricao d8 = new Descricao();
+		s8.setId(chaveStartup++);
+		s8.setNome("PETROBRAS");
+		s8.setCategoria("Fast Food");
+		s8.setUnidade("Toda Regiao do Brasil");
+		s8.setProjeto("Produzem Alimentos");
+		s8.setFerramentas(ferramentas);
+		s8.setDescricao(d8);
+		s8.getDescricao().setTitulo("Melhor que BK");
+		s8.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
+		
 		listaStartup.add(s1);
 		listaStartup.add(s2);
 		listaStartup.add(s3);
 		listaStartup.add(s4);
 		listaStartup.add(s5);
 		listaStartup.add(s6);
+		listaStartup.add(s7);
+		listaStartup.add(s8);
 		
 		
 		Usuario u1 = new Usuario();
