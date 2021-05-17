@@ -28,7 +28,7 @@
 					<div class="left">
 						<center>
                         <div class="logo-main-class">
-                            <a href="/startool/entrada?acao=ListarStartups"><img src="assets/img/logo_name_main.png" alt=""></a>
+                            <a href="/startool/entrada?acao=ListarStartups"><img src="assets/img/logo_name_main.png" class="img-fluid" alt=""></a>
                         </div>
                         </center>					
                         <div class="frase-main-section">
