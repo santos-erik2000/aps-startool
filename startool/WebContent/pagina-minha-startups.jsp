@@ -68,7 +68,72 @@
 			</div>
 			</div>
 			</div>
-		</center>
+			 <c:forEach items="${usuario.listaStartups}" var="startpsUsu">
+				<br>
+				<br>
+				<br>
+				<br>
+				<h1 style="font-family: Archivo;font-style: normal;font-weight: bold;text-align: center;color: #FFFFFF;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Detalhes da Startup: ${startpsUsu.nome}</h1>
+				<br>
+				<br>
+				<div class="row" style="margin: 0 0; margin-top: 80px; ">
+					<div class="col-md-6" style="margin: 0 0; width: 95%; height: 421px; border-radius: 8px;">
+						<div class="unique-startup-div">	
+							<div class="startup-name-div"><p class="startup-name" style = "margin-top: -80px; text-align: right; "><i class="fas fa-minus"></i></p></div> 
+							<div class="row" style="margin: 0 0; ">
+							<div class="col-md-11" style="width: 1228px;height: 724px; ">
+							<p style = "font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #000000;">Dados Startup : </p>
+							<br> 
+							<div class="container">
+								  <div class="row align-items-start">
+								    <div class="col-md-7" style ="background: #F2F2F2; border-radius: 8px;width: 936px;">
+								    <br>
+								    <p style="height: 26px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;color: #C4C4C4;">Nome da Startup</p></div>
+								    <div class="col-md-4" style="margin-top: 13px; margin-right:12px;background: #F2F2F2;border-radius: 8px;">
+								    <br>
+								    <p style="height: 26px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Categoria</p></div>
+								    <div class="col-md-4" style ="margin-top:13px; background: #F2F2F2;border-radius: 8px;">
+								    <br>
+								    <p style="height: 26px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Ferramentas</p></div>
+								    <div class="col-md-1">
+								    <br>
+								    <a href="#"  type="button" class="btn btn-light" style ="background: #F2F2F2; border-radius: 8px;width: 74px; height: 65px; margin-top:-10px;"><h1 style="color: #C4C4C4;">+</h1></a></div>
+								    <br>
+								    <br>
+								    <div "col-md-11">
+								    <div style ="width: 100%; background: #DEE2E6;margin: 50px 25px 50px 0;padding-bottom: 30px;border-radius: 10px;">
+									  <div style="width: 100%;background-color: #c4c4c4; color: white;padding: 15px;display: flex;justify-content: space-between;border-radius: 8px;">
+									      <h2 style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: center;color: #FFFFFF;">Ferramentas Adicionadas</h2>
+									      <div style="width: 30px;height: 5px;background-color: #fff;align-self: center;"></div>
+									  </div>
+									  <div>
+									      <h3 style ="font-size: 1.1rem; color: #c4c4c4; background-color: white;margin: 15px;padding: 15px;border-radius: 8px;"></h3>
+									      <h3 style ="font-size: 1.1rem; color: #c4c4c4; background-color: white;margin: 15px;padding: 15px;border-radius: 8px;"></h3>
+									      <h3 style ="font-size: 1.1rem; color: #c4c4c4; background-color: white;margin: 15px;padding: 15px;border-radius: 8px;"></h3>
+									  </div>
+									</div>
+									</div>
+								  </div>
+								</div>
+					</div>
+					</div>		
+				  			</div>
+				  			</div>	
+			</center>
+				  			<h2 style=" margin-top:450px; font-family:Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;">Descrição da Startup:</h2>
+				  			<center>
+				  			<div class="col-md-8" style="width: 95%px; height: 445px; background: #FFFFFF;border-radius: 12px;">
+  								<br>
+  								<br>
+  								<br>
+  								<br>
+  								<br>
+  								<br>
+  								<h1>TEXTO</h1>
+  							</div>
+  							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
+				</c:forEach>
+							</center>
 		</section>
 		<script src="assets/js/dashboard-main.js"></script>
 		
