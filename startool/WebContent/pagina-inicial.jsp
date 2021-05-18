@@ -88,7 +88,11 @@
                     <div class="conteudo-content">
                         <div class="conteudo-about">
                             <h1 class="mb-35 counteudo_tittle">Começar a Sua Startup Com a Gente</h1>
-                            <p class="mb-35 conteudo-frase">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore hdht dolore magna aliquyam erat, sed diam voluptua.</p>         
+							<p class="mb-35 conteudo-frase">
+                                Esse é o nosso jeito de fazer sua Startup: 
+                                simples e sem enrolação. Faça sua inscrição e experimente uma vida financeira descomplicada. 
+                                Sem Taxa. Free.Tudo pelo sua Startup. Atendimento Humano.
+                            </p>                      
                         </div>
                     </div>
                 </div>

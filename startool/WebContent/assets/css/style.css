@@ -124,6 +124,9 @@ nav,
 section {
   display: block;
 }
+a{
+color:!important transparent;
+}
 body {
   line-height: 1;
 }
@@ -1123,10 +1126,12 @@ table {
   padding: 0;
 }
 
-/*Luis*/
+/*Luis*/ 
 .section-main {
   background-color: rgba(0, 0, 0, 0.78);
-  padding: 80px 0;
+  padding-top: 80px;
+  padding:20px;
+  height:780px;
 }
 .left {
   /* margin-right: 100px; */
@@ -1193,6 +1198,7 @@ table {
 .table-of-startups {
   background-color: #61ca86;
 }
+
 
 .tr-margin {
   padding: 10px;
@@ -1312,6 +1318,9 @@ table {
 @media(max-width: 700px){
 	.mobiletamanho{
 	width: 50% !important;
+	}
+	.section-main{
+	height:1300px;
 }
   .remember-me-login {
     margin-left: 0px;
@@ -1397,7 +1406,7 @@ table {
 	color:#000000;
 	font-family:Arial;
 	font-size:10px;
-	padding:7px 25px;
+	padding:7px 7px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
 	margin-left: 5px;
@@ -1426,3 +1435,16 @@ table {
     padding: 30px;
     font-size: 30px;
     }
+
+.bottompagina{
+	height:1200px;
+
+}
+/*erik*/
+#clique-aqui-pagina-inicial{
+    color:#212529;
+}
+#clique-aqui-pagina-inicial:hover{
+    color:#56ccf2;
+
+}

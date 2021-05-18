@@ -22,7 +22,7 @@
 <div id="header">
     <div class="top">Startups disponíveis em nossa Plataforma.</div>
   
-<section class="section-main">
+<section class="section-main bottompagina">
 				<center>
                         <!-- =======Tabela Startups====== -->
 				<div class="col-md-6" bgcolor="rgb(102, 205, 170)">
