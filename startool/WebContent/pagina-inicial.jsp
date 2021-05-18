@@ -92,7 +92,7 @@
                                 Esse é o nosso jeito de fazer sua Startup: 
                                 simples e sem enrolação. Faça sua inscrição e experimente uma vida financeira descomplicada. 
                                 Sem Taxa. Free.Tudo pelo sua Startup. Atendimento Humano.
-                            </p>                      
+                            </p>                          
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         <div class="conteudo-about">
                             <h1 class="mb-35 counteudo_tittle">Começe a Sua Startup Com a Gente</h1>
                             <p class="mb-35 conteudo-frase">Se interessou pela proposta da Startool?<br>
-                            <a  href="/startool/entrada?acao=PaginaCadastrar" class="conteudo-frase" style="cursor:pointer; font-weight: 900;">Cadastre-se</a>e Incie sua jornada conosco!</p>     
+                            <a  href="/startool/entrada?acao=PaginaCadastrar" class="conteudo-frase" id="clique-aqui-pagina-inicial" style="cursor:pointer;font-weight: 900;">Cadastre-se</a> e Incie sua jornada conosco!</p>     
                         </div>
                     </div>
                 </div>               

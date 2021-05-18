@@ -61,7 +61,7 @@
         <div class="col-md-7 pt-4">
             <div class="float-md-right">
             <div style ="width:90%;  margin:160px 25px 25px 25px;">
-            <a href="http://localhost:8080/startool/acesso?acao=Dashboard"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">Voltar</i></button></a>
+            <a href="/startool/acesso?acao=Dashboard"><button type="button" class="btn btn-voltar btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-angle-left">Voltar</i></button></a>
             <a href="https://api.whatsapp.com/send?phone=+5519997740406"><button type="button" class="btn btn-contato btn-lg" style="width: 160px; height: 50px; color: #FFFFFF; background: #61CA86; border-radius: 8px;"><i class="fa fa-phone icon" style="padding: 3%;">Contato</i></button></a>
             </div> 
             </div>

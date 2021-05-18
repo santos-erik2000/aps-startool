@@ -1001,18 +1001,20 @@ table {
 .counteudo_tittle {
   font-size: 45px;
   font-weight: 600;
-  color: inherit;
+  color: #212529;
+  text-align:center;
 }
 .conteudo-frase {
   font-size: 24px;
-  letter-spacing: -0.03em;
+  text-align: justify;
 }
-
-/* .conteudo-img {
-  width: 420px;
-  height: 655px;
-} */
-
+#clique-aqui-pagina-inicial{
+	color:#212529;
+}
+#clique-aqui-pagina-inicial:hover{
+	color:#56ccf2;
+	
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .conteudo-img {
     margin-bottom: 50px;
@@ -1438,13 +1440,4 @@ table {
 
 .bottompagina{
 	height:1200px;
-
-}
-/*erik*/
-#clique-aqui-pagina-inicial{
-    color:#212529;
-}
-#clique-aqui-pagina-inicial:hover{
-    color:#56ccf2;
-
 }
