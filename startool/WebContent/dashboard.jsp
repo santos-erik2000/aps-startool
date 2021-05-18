@@ -42,7 +42,7 @@
 									 <div class="col-md-6">
 									</div>
 									<div class="col-md-6">
-										<a style="text-decoration: none; float: right;" type="submit" class="button-to-log saiba-mais" href="http://localhost:8080/startool/acesso?acao=InformaStartup&id=${startup.id}">Saiba + </a>
+										<a style="text-decoration: none; float: right;" type="submit" class="button-to-log saiba-mais" href="/startool/acesso?acao=InformaStartup&id=${startup.id}">Saiba + </a>
 									</div>
 									
 								</div>
