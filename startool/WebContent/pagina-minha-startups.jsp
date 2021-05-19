@@ -16,6 +16,13 @@
 		<link rel="stylesheet" href="assets/css/style.css">
 		<link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-2.min.css">
 		<title>Insert title here</title>
+		
+		 <!--====== SCRIPT ======-->
+		<script type="text/javascript">function mostra(ma){
+			document.getElementById('ma').style.display='block';
+		}
+		</script>
+		 <!--====== END SCRIPT ======-->
 	</head>
 	<body style="background-color: #56CCF2;">
 	  <!--====== NAV PART START ======-->
@@ -54,7 +61,7 @@
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.projeto}</td>
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.categoria}</td>
 						    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">
-						    	<a href="#"> <button type="button" class="btn btn-success" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button></a>
+						    	 <button type="button" class="btn btn-success" onClick ="mostra()" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button>
 						    	<a href="#0"> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
 						    </td>
 					    </tr> 
@@ -68,12 +75,13 @@
 			</div>
 			</div>
 			</div>
-			 <c:forEach items="${usuario.listaStartups}" var="startpsUsu">
+			 
 				<br>
 				<br>
 				<br>
 				<br>
-				<h1 style="font-family: Archivo;font-style: normal;font-weight: bold;text-align: center;color: #FFFFFF;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Detalhes da Startup: ${startpsUsu.nome}</h1>
+				<div id = "ma" class ="hidden" style="display:none;">
+				<h1 style="font-family: Archivo;font-style: normal;font-weight: bold;text-align: center;color: #FFFFFF;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Detalhes da Startup:</h1>
 				<br>
 				<br>
 				<div class="row" style="margin: 0 0; margin-top: 80px; ">
@@ -119,7 +127,7 @@
 					</div>		
 				  			</div>
 				  			</div>	
-			</center>
+			
 				  			<h2 style=" margin-top:450px; font-family:Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;">Descrição da Startup:</h2>
 				  			<center>
 				  			<div class="col-md-8" style="width: 95%px; height: 445px; background: #FFFFFF;border-radius: 12px;">
@@ -130,9 +138,11 @@
   								<br>
   								<br>
   								<h1>TEXTO</h1>
+  								</center>
   							</div>
   							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
-				</c:forEach>
+				
+				</div>
 							</center>
 		</section>
 		<script src="assets/js/dashboard-main.js"></script>
