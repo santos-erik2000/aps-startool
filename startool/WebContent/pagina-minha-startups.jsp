@@ -112,7 +112,7 @@
 								    <div style ="width: 100%; background: #DEE2E6;margin: 50px 25px 50px 0;padding-bottom: 30px;border-radius: 10px;">
 									  <div style="width: 100%;background-color: #c4c4c4; color: white;padding: 15px;display: flex;justify-content: space-between;border-radius: 8px;">
 									      <h2 style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: center;color: #FFFFFF;">Ferramentas Adicionadas</h2>
-									      <div style="width: 30xp;height: 5px;background-color: #fff;align-self: center;"></div>
+									      <div style="width: 30px;height: 5px;background-color: #fff;align-self: center;"></div>
 									  </div>
 									  <div>
 									  <br>
