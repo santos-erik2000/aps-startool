@@ -1441,3 +1441,29 @@ table {
 .bottompagina{
 	height:1200px;
 }
+
+@media(max-width: 709px){
+  .input-login-user {
+    width: 400px;
+  }
+}
+
+@media(max-width: 550px){
+  .input-login-user {
+    width: 380px;
+  }
+}
+
+@media(max-width: 500px){
+  .input-login-user {
+    width: 280px;
+  }
+}
+
+@media(max-width: 375px){
+  .input-login-user {
+    width: 210px;
+  }
+}
+  
+  

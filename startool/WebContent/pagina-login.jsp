@@ -28,7 +28,7 @@
 	        <div>
 	            <center>
 		            <a href="/startool/entrada?acao=ListarStartups">
-		            	<img src="assets/img/logo.png" alt="" width="260" height="340" style="margin-top: 1%;">
+		            	<img src="assets/img/logo.png" alt="" width="260" height="340" style="margin-top: 25px;">
 		            </a>
 		            <p style="font-size: 25px; color: #c4c4c4;">Faça Login para iniciar sua sessão</p>
 		            <form action="${LinkServletLogin}" method="post">
