@@ -89,20 +89,20 @@
 						<div class="unique-startup-div">	
 							<div class="startup-name-div"><p class="startup-name" style = "margin-top: -80px; text-align: right; "><i class="fas fa-minus"></i></p></div> 
 							<div class="row" style="margin: 0 0; ">
-							<div class="col-md-11" style="width: 1228px;height: 724px; ">
+							<div class="col-md-11" style="width: 1228px;height: 100%; ">
 							<p style = "font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #000000;">Dados Startup : </p>
 							<br> 
 							<div class="container">
 								  <div class="row align-items-start">
 								    <div class="col-md-7" style ="background: #F2F2F2; border-radius: 8px;width: 936px;">
 								    <br>
-								    <p style="height: 26px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;color: #C4C4C4;">Nome da Startup</p></div>
+								    <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;color: #C4C4C4;">Nome da Startup</p></div>
 								    <div class="col-md-4" style="margin-top: 13px; margin-right:12px;background: #F2F2F2;border-radius: 8px;">
 								    <br>
-								    <p style="height: 26px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Categoria</p></div>
+								    <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Categoria</p></div>
 								    <div class="col-md-4" style ="margin-top:13px; background: #F2F2F2;border-radius: 8px;">
 								    <br>
-								    <p style="height: 26px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Ferramentas</p></div>
+								    <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Ferramentas</p></div>
 								    <div class="col-md-1">
 								    <br>
 								    <a href="#"  type="button" class="btn btn-light" style ="background: #F2F2F2; border-radius: 8px;width: 74px; height: 65px; margin-top:-10px;"><h1 style="color: #C4C4C4;">+</h1></a></div>
@@ -112,12 +112,13 @@
 								    <div style ="width: 100%; background: #DEE2E6;margin: 50px 25px 50px 0;padding-bottom: 30px;border-radius: 10px;">
 									  <div style="width: 100%;background-color: #c4c4c4; color: white;padding: 15px;display: flex;justify-content: space-between;border-radius: 8px;">
 									      <h2 style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: center;color: #FFFFFF;">Ferramentas Adicionadas</h2>
-									      <div style="width: 30px;height: 5px;background-color: #fff;align-self: center;"></div>
+									      <div style="width: 30xp;height: 5px;background-color: #fff;align-self: center;"></div>
 									  </div>
 									  <div>
-									      <h3 style ="font-size: 1.1rem; color: #c4c4c4; background-color: white;margin: 15px;padding: 15px;border-radius: 8px;"></h3>
-									      <h3 style ="font-size: 1.1rem; color: #c4c4c4; background-color: white;margin: 15px;padding: 15px;border-radius: 8px;"></h3>
-									      <h3 style ="font-size: 1.1rem; color: #c4c4c4; background-color: white;margin: 15px;padding: 15px;border-radius: 8px;"></h3>
+									  <br>
+									      <input type="text" style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">
+									      <input type="text" style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">
+									      <input type="text" style="width: 98%;height: 50px;lbackground: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">
 									  </div>
 									</div>
 									</div>
@@ -131,16 +132,10 @@
 				  			<h2 style=" margin-top:450px; font-family:Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;">Descrição da Startup:</h2>
 				  			<center>
 				  			<div class="col-md-8" style="width: 95%px; height: 445px; background: #FFFFFF;border-radius: 12px;">
-  								<br>
-  								<br>
-  								<br>
-  								<br>
-  								<br>
-  								<br>
-  								<h1>TEXTO</h1>
+  								<input type="text" style="width: 100%; height: 445px; background: #FFFFFF;border-radius: 12px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 48px;line-height: 52px;color: #000000;" >
   								</center>
   							</div>
-  							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
+  							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px;"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
 				
 				</div>
 							</center>
