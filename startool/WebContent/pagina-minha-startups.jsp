@@ -19,9 +19,14 @@
 		
 		 <!--====== SCRIPT ======-->
 		<script type="text/javascript">
-		function mostra(ma){
+		function mostrar(ma){
 			document.getElementById('ma').style.display='block';
 		}
+		
+		function ocutar(ma){
+			document.getElementById('ma').style.display='none';
+		}
+		
 		var capturando = "";
 		function capturar () {
 		    capturando = document.getElementById('valor').value;
@@ -67,7 +72,7 @@
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.projeto}</td>
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.categoria}</td>
 						    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">
-						    	 <button type="button" class="btn btn-success" onClick ="mostra()" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button>
+						    	 <button type="button" class="btn btn-success" onClick ="mostrar()" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button>
 						    	<a href="#0"> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
 						    </td>
 					    </tr> 
@@ -81,7 +86,6 @@
 			</div>
 			</div>
 			</div>
-			 
 				<br>
 				<br>
 				<br>
@@ -140,7 +144,7 @@
   								<input type="text" style="width: 100%; height: 445px; background: #FFFFFF;border-radius: 12px; font-family: Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;" >
   								</center>
   							</div>
-  							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px;"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
+  							<button type="submit" class="btn btn-sign btn-lg active" onClick ="ocutar()" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px;"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
 					</c:forEach>
 					
 				</div>
