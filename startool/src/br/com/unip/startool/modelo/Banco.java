@@ -16,8 +16,20 @@ public class Banco {
 		ferramentas.add("Eclipse");
 		ferramentas.add("Python");
 		ferramentas.add("MYSQL");
-		ferramentas.add("PHP");
 		ferramentas.add("JAVA");
+		
+		List<String> ferramentas2 = new ArrayList<>();
+		ferramentas2.add("AWS");
+		ferramentas2.add("PHP");
+		ferramentas2.add("Cobol");
+		
+		List<String> ferramentas3 = new ArrayList<>();
+		ferramentas3.add("MariaDB");
+		ferramentas3.add("Azure");
+		ferramentas3.add("Ruby");
+		
+		List<String> ferramentas4 = new ArrayList<>();
+		ferramentas4.add("Mobile React Native");
 		
 		Startups s1 = new Startups();
 		Descricao d1 = new Descricao();
@@ -29,7 +41,7 @@ public class Banco {
 		s1.setFerramentas(ferramentas);
 		s1.setDescricao(d1);
 		s1.getDescricao().setTitulo("Venha fazer parte da nossa Squad");
-		s1.getDescricao().setAssunto("kasdjfoiawej foiasndfoias jdfoiasj dfoasidfj asoidf jasd oifj");
+		s1.getDescricao().setAssunto("Empresa de Tecnologia, Driven by Impact");
 		
 		
 		Startups s2 = new Startups();
@@ -39,10 +51,12 @@ public class Banco {
 		s2.setCategoria("Desenvolvedor de Software");
 		s2.setUnidade("Araras");
 		s2.setProjeto("WEB");
-		s2.setFerramentas(ferramentas);
+		s2.setFerramentas(ferramentas2);
 		s2.setDescricao(d2);
 		s2.getDescricao().setTitulo("Venha para Araras");
-		s2.getDescricao().setAssunto("asldalsdmaskdfmaskdfjasdfpjasdfjasdopfjasdop");
+		s2.getDescricao().setAssunto("A AF Systems é uma empresa de Desenvolvimento Web localizada no interior de São Paulo, na Cidade de Araras, foi fundada em 2006, e atendemos todo o Brasil e exterior.\r\n" + 
+				"\r\n" + 
+				"Unimos profissionais experientes e qualificados para analisar, criar e desenvolver as melhores soluções para que seu negócio prospere ainda mais.");
 		
 		Startups s3 = new Startups();
 		Descricao d3 = new Descricao();
@@ -51,7 +65,7 @@ public class Banco {
 		s3.setCategoria("Automovel");
 		s3.setUnidade("Araras");
 		s3.setProjeto("Vender Carros");
-		s3.setFerramentas(ferramentas);
+		s3.setFerramentas(ferramentas3);
 		s3.setDescricao(d3);
 		s3.getDescricao().setTitulo("Vendendo Carros");
 		s3.getDescricao().setAssunto("A boa de Negocios");
@@ -63,7 +77,7 @@ public class Banco {
 		s4.setCategoria("Automovel");
 		s4.setUnidade("Limeira");
 		s4.setProjeto("Produzem escapamento");
-		s4.setFerramentas(ferramentas);
+		s4.setFerramentas(ferramentas4);
 		s4.setDescricao(d4);
 		s4.getDescricao().setTitulo("Escapa nem ventos");
 		s4.getDescricao().setAssunto("Nascemos no ano de 1500, e somos a melhor fabrica do brazil, presando o meio ambiente. Somo MULTI !!");
@@ -87,7 +101,7 @@ public class Banco {
 		s6.setCategoria("Fast Food");
 		s6.setUnidade("Toda Regiao do Brasil");
 		s6.setProjeto("Produzem Alimentos");
-		s6.setFerramentas(ferramentas);
+		s6.setFerramentas(ferramentas2);
 		s6.setDescricao(d6);
 		s6.getDescricao().setTitulo("Melhor que BK");
 		s6.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
@@ -99,9 +113,9 @@ public class Banco {
 		s7.setCategoria("Fast Food");
 		s7.setUnidade("Toda Regiao do Brasil");
 		s7.setProjeto("Produzem Alimentos");
-		s7.setFerramentas(ferramentas);
+		s7.setFerramentas(ferramentas3);
 		s7.setDescricao(d7);
-		s7.getDescricao().setTitulo("Melhor que BK");
+		s7.getDescricao().setTitulo("Melhor Banco Internacional");
 		s7.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
 		
 		Startups s8 = new Startups();
@@ -111,9 +125,9 @@ public class Banco {
 		s8.setCategoria("Fast Food");
 		s8.setUnidade("Toda Regiao do Brasil");
 		s8.setProjeto("Produzem Alimentos");
-		s8.setFerramentas(ferramentas);
+		s8.setFerramentas(ferramentas4);
 		s8.setDescricao(d8);
-		s8.getDescricao().setTitulo("Melhor que BK");
+		s8.getDescricao().setTitulo("Somos Peritos em roubo (kkk)");
 		s8.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
 		
 		listaStartup.add(s1);
