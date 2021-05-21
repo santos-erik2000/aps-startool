@@ -18,8 +18,14 @@
 		<title>Insert title here</title>
 		
 		 <!--====== SCRIPT ======-->
-		<script type="text/javascript">function mostra(ma){
+		<script type="text/javascript">
+		function mostra(ma){
 			document.getElementById('ma').style.display='block';
+		}
+		var capturando = "";
+		function capturar () {
+		    capturando = document.getElementById('valor').value;
+		    document.getElementById('valorDigitado').innerHTML = capturando;
 		}
 		</script>
 		 <!--====== END SCRIPT ======-->
@@ -80,6 +86,7 @@
 				<br>
 				<br>
 				<br>
+				<c:forEach items="${usuario.listaStartups}" var="startpsUsu">
 				<div id = "ma" class ="hidden" style="display:none;">
 				<h1 style="font-family: Archivo;font-style: normal;font-weight: bold;text-align: center;color: #FFFFFF;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Detalhes da Startup:</h1>
 				<br>
@@ -95,17 +102,15 @@
 							<div class="container">
 								  <div class="row align-items-start">
 								    <div class="col-md-7" style ="background: #F2F2F2; border-radius: 8px;width: 936px;">
-								    <br>
-								    <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;color: #C4C4C4;">Nome da Startup</p></div>
+								    <input type="text" placeholder="Nome: ${startpsUsu.nome}" style="border:solid #F2F2F2;background: #F2F2F2; width:100%; height:65px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;color: #C4C4C4;"></div>
 								    <div class="col-md-4" style="margin-top: 13px; margin-right:12px;background: #F2F2F2;border-radius: 8px;">
-								    <br>
-								    <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Categoria</p></div>
+								    <input type="text" placeholder="Categoria: ${startpsUsu.categoria} " style="border:solid #F2F2F2;background: #F2F2F2;width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;"></div>
 								    <div class="col-md-4" style ="margin-top:13px; background: #F2F2F2;border-radius: 8px;">
-								    <br>
-								    <p style="font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;">Ferramentas</p></div>
+								    <input type="text" id=valor placeholder="Ferramentas: ${startpsUsu.ferramentas} " style="border:solid #F2F2F2;background: #F2F2F2; width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;"></div>
 								    <div class="col-md-1">
 								    <br>
-								    <a href="#"  type="button" class="btn btn-light" style ="background: #F2F2F2; border-radius: 8px;width: 74px; height: 65px; margin-top:-10px;"><h1 style="color: #C4C4C4;">+</h1></a></div>
+								    <input type="submit" onclick="capturar()" value="+" style ="margin-top:-13px;border:solid #F2F2F2;background: #F2F2F2;border-radius: 8px;color:#C4C4C4;width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 48px;line-height: 52px;text-align: center;">
+								    </div>
 								    <br>
 								    <br>
 								    <div "col-md-11">
@@ -116,9 +121,9 @@
 									  </div>
 									  <div>
 									  <br>
-									      <input type="text" style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">
-									      <input type="text" style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">
-									      <input type="text" style="width: 98%;height: 50px;lbackground: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">
+									      <h6 style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">${startpsUsu.ferramentas}</h6>
+									      <h6 id="valorDigitado" style="width: 98%;height: 50px; margin-top:-16px; background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;"></h6>
+									      <h6 style="width: 98%;height: 50px;background: #FFFFFF;margin-top:-16px;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;"></h6>
 									  </div>
 									</div>
 									</div>
@@ -132,16 +137,16 @@
 				  			<h2 style=" margin-top:450px; font-family:Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;">Descrição da Startup:</h2>
 				  			<center>
 				  			<div class="col-md-8" style="width: 95%px; height: 445px; background: #FFFFFF;border-radius: 12px;">
-  								<input type="text" style="width: 100%; height: 445px; background: #FFFFFF;border-radius: 12px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 48px;line-height: 52px;color: #000000;" >
+  								<input type="text" style="width: 100%; height: 445px; background: #FFFFFF;border-radius: 12px; font-family: Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;" >
   								</center>
   							</div>
   							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px;"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
-				
+					</c:forEach>
+					
 				</div>
 							</center>
 		</section>
 		<script src="assets/js/dashboard-main.js"></script>
-		
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
 	</body>
