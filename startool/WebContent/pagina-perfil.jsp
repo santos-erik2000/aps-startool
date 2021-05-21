@@ -39,7 +39,10 @@
                         <h3 class="dados">Telefone: ${usuario.telefone}</h3>
                         <h3 class="dados">Estudante: ${usuario.estudante}</h3>
                         <h3 class="dados">Curso: ${usuario.curso}</h3>
-                        <h3 class="dados">Startup Inscrita: ${usuario.listaNomeStartup}</h3>
+                        <h3 class="dados">Startup Inscrita:
+                        <c:forEach items="${listaStartups}" var="startups">
+                        	${startups.nome} -
+                        </c:forEach> </h3>
                     </div>
                     
         

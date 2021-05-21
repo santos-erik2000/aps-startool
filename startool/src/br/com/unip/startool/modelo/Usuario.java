@@ -1,6 +1,7 @@
 package br.com.unip.startool.modelo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Usuario {
@@ -17,7 +18,7 @@ public class Usuario {
 	private String email;
 	private Estudante estudante;
 	private List<Startups> listaStartups = new ArrayList<Startups>();
-	private List<String> listaNomeStartup = new ArrayList<String>();
+	
 	
 	public void setId(Integer id) {
 		this.id = id;
@@ -95,14 +96,6 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public void setListaNomeStartup(List<String> listaNomeStartup) {
-		this.listaNomeStartup = listaNomeStartup;
-	}
-	
-	public List<String> getListaNomeStartup() {
-		return listaNomeStartup;
-	}
-
 	public Estudante getEstudante() {
 		return estudante;
 	}
@@ -152,7 +145,16 @@ public class Usuario {
 
 	public void adicionarStart(Startups star) {
 		listaStartups.add(star);
-		listaNomeStartup.add(star.getNome());
+	}
+	
+	public void removeStartupDeUsuario(Integer id) {
+		Iterator<Startups> it = listaStartups.iterator();
+		while(it.hasNext()) {
+			Startups cli = it.next();
+			if(cli.getId() == id) {
+				it.remove();
+			}
+		}
 	}
 	
 }

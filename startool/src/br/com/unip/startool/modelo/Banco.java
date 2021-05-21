@@ -224,4 +224,16 @@ public class Banco {
 		}
 		return null;
 	}
+	public void removerStartup(Integer id) {
+		
+		Iterator<Startups> it = listaStartup.iterator();
+		
+		while(it.hasNext()) {
+			Startups cli = it.next();
+			if(cli.getId() == id) {
+				it.remove();
+			}
+		}
+		
+	}
 }

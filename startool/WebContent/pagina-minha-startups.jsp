@@ -68,7 +68,7 @@
 					    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">${startpsUsu.categoria}</td>
 						    <td style = "font-family: Archivo;font-style: normal;font-weight: bold; text-align: center; color: #000000;">
 						    	 <button type="button" class="btn btn-success" onClick ="mostra()" style ="width: 90px; height: 29px; background-color: #30B800 !important;">Editar</button>
-						    	<a href="#0"> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
+						    	<a href="/startool/acesso?acao=ExcluirStartup&idStartup=${startpsUsu.id}&id=${usuario.id}"> <button type="button" class="btn btn-danger" style ="width: 90px; height: 29px; background-color:#DC1414 !important;">Excluir</button></a>
 						    </td>
 					    </tr> 
 					    </c:forEach>
@@ -102,11 +102,11 @@
 							<div class="container">
 								  <div class="row align-items-start">
 								    <div class="col-md-7" style ="background: #F2F2F2; border-radius: 8px;width: 936px;">
-								    <input type="text" placeholder="Nome: ${startpsUsu.nome}" style="border:solid #F2F2F2;background: #F2F2F2; width:100%; height:65px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;color: #C4C4C4;"></div>
+								    <input type="text" placeholder="Nome: ${startpsUsu.nome}" value="${startpsUsu.nome}" style="border:solid #F2F2F2;background: #F2F2F2; width:100%; height:65px;font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;text-align:left;"></div>
 								    <div class="col-md-4" style="margin-top: 13px; margin-right:12px;background: #F2F2F2;border-radius: 8px;">
-								    <input type="text" placeholder="Categoria: ${startpsUsu.categoria} " style="border:solid #F2F2F2;background: #F2F2F2;width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;"></div>
+								    <input type="text" placeholder="Categoria: ${startpsUsu.categoria} " value="${startpsUsu.categoria}" style="border:solid #F2F2F2;background: #F2F2F2;width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;"></div>
 								    <div class="col-md-4" style ="margin-top:13px; background: #F2F2F2;border-radius: 8px;">
-								    <input type="text" id=valor placeholder="Ferramentas: ${startpsUsu.ferramentas} " style="border:solid #F2F2F2;background: #F2F2F2; width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;color: #C4C4C4;"></div>
+								    <input type="text" id=valor placeholder="Ferramentas: ${startpsUsu.ferramentas}"value="${startpsUsu.ferramentas}" style="border:solid #F2F2F2;background: #F2F2F2; width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 24px;line-height: 26px;text-align: left;"></div>
 								    <div class="col-md-1">
 								    <br>
 								    <input type="submit" onclick="capturar()" value="+" style ="margin-top:-13px;border:solid #F2F2F2;background: #F2F2F2;border-radius: 8px;color:#C4C4C4;width: 100%; height:65px; font-family: Archivo;font-style: normal;font-weight: bold;font-size: 48px;line-height: 52px;text-align: center;">
@@ -121,9 +121,10 @@
 									  </div>
 									  <div>
 									  <br>
-									      <h6 style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">${startpsUsu.ferramentas}</h6>
+									  <c:forEach items="${startpsUsu.ferramentas}" var="ferramentas">
+									      <h6 style="width: 98%;height: 50px;background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;">${ferramentas}</h6>
+									      </c:forEach>
 									      <h6 id="valorDigitado" style="width: 98%;height: 50px; margin-top:-16px; background: #FFFFFF;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;"></h6>
-									      <h6 style="width: 98%;height: 50px;background: #FFFFFF;margin-top:-16px;border: 1px solid #000000;box-sizing: border-box;border-radius: 6px;"></h6>
 									  </div>
 									</div>
 									</div>
@@ -137,7 +138,7 @@
 				  			<h2 style=" margin-top:450px; font-family:Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;">Descrição da Startup:</h2>
 				  			<center>
 				  			<div class="col-md-8" style="width: 95%px; height: 445px; background: #FFFFFF;border-radius: 12px;">
-  								<input type="text" style="width: 100%; height: 445px; background: #FFFFFF;border-radius: 12px; font-family: Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;" >
+  								<input type="text" Value="${startpsUsu.descricao.assunto}" style="width: 100%; height: 445px; background: #FFFFFF;border-radius: 12px; font-family: Archivo;font-style: normal;font-weight: bold; text-align: center;color: #000000;" >
   								</center>
   							</div>
   							<button type="submit" class="btn btn-sign btn-lg active" title="Cadastrar" style="width:187.69; height: 49px;background: #61CA86; border-radius: 8px;"><p style="font-family: Archivo; font-style: normal; font-weight: bold; font-size: 24px; line-height: 26px; text-align: center; color: #FFFFFF;">Cadastrar</p></button>
