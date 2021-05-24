@@ -29,7 +29,7 @@ public class Banco {
 		ferramentas3.add("Ruby");
 		
 		List<String> ferramentas4 = new ArrayList<>();
-		ferramentas4.add("Mobile React Native");
+		ferramentas4.add("Mobile");
 		
 		Startups s1 = new Startups();
 		Descricao d1 = new Descricao();
@@ -93,51 +93,15 @@ public class Banco {
 		s5.setDescricao(d5);
 		s5.getDescricao().setTitulo("Melhor Leitinho BR");
 		s5.getDescricao().setAssunto("Somos suicos, E Somos uma Multi que caso vc entre, ira se orgulhar muito !!!");
+
+	
 		
-		Startups s6 = new Startups();
-		Descricao d6 = new Descricao();
-		s6.setId(chaveStartup++);
-		s6.setNome("MCdonalds");
-		s6.setCategoria("Fast Food");
-		s6.setUnidade("Toda Regiao do Brasil");
-		s6.setProjeto("Produzem Alimentos");
-		s6.setFerramentas(ferramentas2);
-		s6.setDescricao(d6);
-		s6.getDescricao().setTitulo("Melhor que BK");
-		s6.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
-		
-		Startups s7 = new Startups();
-		Descricao d7 = new Descricao();
-		s7.setId(chaveStartup++);
-		s7.setNome("NUBANK");
-		s7.setCategoria("Fast Food");
-		s7.setUnidade("Toda Regiao do Brasil");
-		s7.setProjeto("Produzem Alimentos");
-		s7.setFerramentas(ferramentas3);
-		s7.setDescricao(d7);
-		s7.getDescricao().setTitulo("Melhor Banco Internacional");
-		s7.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
-		
-		Startups s8 = new Startups();
-		Descricao d8 = new Descricao();
-		s8.setId(chaveStartup++);
-		s8.setNome("PETROBRAS");
-		s8.setCategoria("Fast Food");
-		s8.setUnidade("Toda Regiao do Brasil");
-		s8.setProjeto("Produzem Alimentos");
-		s8.setFerramentas(ferramentas4);
-		s8.setDescricao(d8);
-		s8.getDescricao().setTitulo("Somos Peritos em roubo (kkk)");
-		s8.getDescricao().setAssunto("Somos americanos, e conseguimos expandir para o mundo");
-		
+
 		listaStartup.add(s1);
 		listaStartup.add(s2);
 		listaStartup.add(s3);
 		listaStartup.add(s4);
 		listaStartup.add(s5);
-		listaStartup.add(s6);
-		listaStartup.add(s7);
-		listaStartup.add(s8);
 		
 		
 		Usuario u1 = new Usuario();
@@ -167,7 +131,6 @@ public class Banco {
 		u2.setEmail("Sarah@gmail.com");
 		u2.isEstudante("NAO");
 		u2.setSenha("123");
-		//u2.adicionarStart(s2);
 		
 		listaUsuario.add(u1);
 		listaUsuario.add(u2);

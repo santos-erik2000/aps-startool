@@ -28,7 +28,6 @@ public class ExcluirStartup implements Acao {
 		b.removerStartup(id);
 		
 		
-		//request.setAttribute("usuario", u);
 		return "redirect:acesso?acao=MinhaStartup&id="+idUsu;
 	}
 
