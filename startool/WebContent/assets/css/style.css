@@ -125,7 +125,7 @@ section {
   display: block;
 }
 a{
-color:!important transparent;
+color: transparent !important;
 }
 body {
   line-height: 1;
@@ -1135,9 +1135,9 @@ table {
   padding:20px;
   height:780px;
 }
-.left {
-  /* margin-right: 100px; */
-}
+/* .left {
+  margin-right: 100px;
+} */
 @media (max-width: 767px) {
   .logo-main-class img {
     width: 100%;
@@ -1318,12 +1318,12 @@ table {
 }
 
 @media(max-width: 700px){
+	#tabela-mobile{
+		display:none;	
+	}
 	.mobiletamanho{
 	width: 50% !important;
 	}
-	.section-main{
-	height:1300px;
-}
   .remember-me-login {
     margin-left: 0px;
   }
@@ -1397,7 +1397,10 @@ table {
     transform: scale(1);
   }
 }
-/*botao*/
+/*botao
+.botao-ferramentas{
+	width: 100% !important;
+}*/
 .botao {
 	background:linear-gradient(to bottom, #ededed 5%, #ffffff 100%);
 	background-color:#ededed;
@@ -1411,11 +1414,8 @@ table {
 	padding:7px 7px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom:5px;
+	margin: 5px;
 	margin-top:5px;
-	width: 70%;
 	font-size:13px;
 }
 .botao:hover {

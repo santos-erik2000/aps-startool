@@ -49,7 +49,7 @@
 
 				<!-- =======Tabela Startups====== -->
 
-				<div class="col-md-6" bgcolor="rgb(102, 205, 170)">
+				<div class="col-md-6" id="tabela-mobile" bgcolor="rgb(102, 205, 170)">
 					<div class="table-of-startups">
 					<center>
 							<br>
@@ -61,7 +61,7 @@
 						<c:forEach items="${startups.ferramentas}" var="ferramentas">
 					
 					    <div class="col-sm-4 mobiletamanho">
-                                    <div class="botao">${ferramentas}</div>
+                                    <div class="botao botao-ferramentas">${ferramentas}</div>
                             </div>
                             </c:forEach>
 						</div>
